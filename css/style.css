@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+  background-color: rgba(249, 208, 71, 1);
+  background-image: url("mAndL.png");
+  background-size: cover;
+}
+h1{
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  color: #e03816;
+}
+img{
+  height:150px;
+  margin-left: 45%;
+  margin-top: 40px;
+
+
+
+}
+section{
+  margin-top: 90px;;
+  text-align: center;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.coins{
+  height:150px;
+  width: 16%;
+  margin-left: 20%;
+
+}
+
+/* .coins.back.selected{
+ background-color: blue;
+}
+.coins .face.selected{
+  background-image: url("media/tails.jpg");
+} */
