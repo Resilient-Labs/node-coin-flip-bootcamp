@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Flip Game</title>
+</head>
+
+<body>
+  <h1> Mario & Luigi Coin Flip</h1>
+  <section>
+    <button class="guess  face heads" type="button" name="button">HEADS FOR MARIO</button>
+    <button class="guess back  tails" type="button" name="button">TAILS FOR LUIGI</button>
+  </section>
+  <img src="media/coinSpin.gif" alt="">
+  <section>
+    <h2></h2>
+    <p></p>
+  </section>
+
+
+  <script type="text/javascript">
+    document.querySelectorAll("button").forEach(function(coin) {
+      coin.addEventListener("click", flip)
+    })
+    let clicks = 0
+    function flip() {
+      clicks += 1;
+      console.log(clicks);
+      document.querySelector("p").innerHTML = clicks
+      let guess = Math.random()
+      if (guess < .50) {//tails
+        document.querySelector("img").src = ("media/luigiProfile.png")
+        document.querySelector("h2").textContent = "Luigi Wins!"
+      } else {//heads
+        document.querySelector("img").src = ("media/marioP.png")
+        document.querySelector("h2").textContent = "Mario Wins!"
+  }
+    }
+  </script>
+</body>
+
+</html>
