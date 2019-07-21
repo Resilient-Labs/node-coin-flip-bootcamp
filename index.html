@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    body{
+      background-image: url('sal3.png');
+      background-size: cover;
+      text-align: center;
+      font-family: 'Bungee Outline', cursive;
+      font-size: 31px;
+    }
+    img{
+      display: block;
+      margin-left: 39%;
+    }
+    #heads, #tails {
+      border: none;
+      border-radius: 40px;
+      background-color: #e6c459;
+      color: black;
+      font-family: 'Bungee Outline', cursive;
+      font-size: 1em;
+      margin-left: 1%;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heads or Tails</h1>
+  <button id="heads" type="button" value="heads">Heads</button>
+  <button id="tails" type="button" value="tails">Tails</button>
+  <img src="">
+  <p id="result"></p>
+  <p id="winnerLoser"></p>
+  <script type="text/javascript">
+    document.getElementById('heads').onclick = checkHead;
+    //the below function is only to flip the coin
+    function flipCoin() {
+      let result = Math.ceil(Math.random()*2)
+      if (result === 1) {
+        document.querySelector("img").src = "sal1.png"
+        return 'heads'
+      }
+      else if (result === 2){
+        document.querySelector("img").src = "sal2.png"
+        return 'tails'
+      }
+    }
+    document.getElementById('tails').onclick = checkTail;
+
+    function checkHead() {
+      let result = flipCoin()
+      let head = document.getElementById('heads').value
+      if (result === 'heads'&& result === head){
+        alert("You won!")
+      }else{
+        alert ("Try again!")
+      }
+    }
+    function checkTail() {
+      let result = flipCoin()
+      let tails = document.getElementById('tails').value
+      if (result === 'tails'&& result === tails){
+        alert("You won!")
+      }else{
+        alert ("Try again!")
+      }
+    }
+  </script>
+</body>
+</html>
