@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <title>Coin flip game</title>
+  </head>
+  <style media="screen">
+  html{
+    background-image: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+  }
+  header{
+    background-color: black;
+    text-align: center;
+    height: 150px;
+  }
+  h1, p{
+    color: white;
+    font-size: 2rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  #heads{
+    text-align: center;
+    font-size: 1rem
+  }
+  #tail{
+    text-align: center;
+    font-size: 1rem;
+  }
+  #head{
+      width: 20%;
+      margin: auto;
+      position: relative;
+      top: -500;
+      left: 18%;
+  }
+  #tails{
+      width: 20%;
+      text-align: center;
+      position: relative;
+      top: -500;
+      left: 38%;
+  }
+  </style>
+  <body>
+    <header>
+    <h1>Flip the coin</h1>
+    <p>choose which side of the coin you think the coin will land on</p>
+  </header>
+    <p id = "result"></p>
+    <form class="" action="index.html" method="post">
+    <button id="heads"type="button" name="button"> Heads</button>
+    <button id="tail"type="button" name="button"> tails</button>
+      </form>
+      <section>
+      <img id="tails" src="tails.png" alt="">
+      <img id="head" src="head.png" alt="">
+      </section>
+  </body>
+  <script src="server.js">
+  let head = document.getElementById('heads').addEventListener('click',() => {
+    let headCheck = "head"
+    let botChoice = null
+        var spin = Math.random();
+        if(spin<.49){
+          document.getElementById('head').style.zIndex = "0"
+          document.getElementById('tails').style.zIndex = "1"
+          botChoice = "tail"
+        }else{
+          document.getElementById('tails').style.zIndex = "0"
+          document.getElementById('head').style.zIndex = "1"
+          botChoice = "head"
+        }
+          if (botChoice === headCheck){
+            console.log("win")
+          }else{
+            console.log("lose")
+          }
+    });
+  let tail = document.getElementById('tail').addEventListener('click',() => {
+    let tailCheck = "tail"
+    let botChoice = null
+    let botScore = 0
+    let userScore = 0
+        var spin = Math.random();
+        if(spin<.49){
+          document.getElementById('head').style.zIndex = "0"
+          document.getElementById('tails').style.zIndex = "1"
+          botChoice = "tail"
+        }else{
+          document.getElementById('tails').style.zIndex = "0"
+          document.getElementById('head').style.zIndex = "1"
+          botChoice = "head"
+        }
+          if (botChoice === tailCheck){
+            //document.getElementById('result').innerHTML = " "
+            document.getElementById('result').innerHTML = "win"
+          }else{
+            //document.getElementById('result').innerHTML = " "
+            document.getElementById('result').innerHTML = "loss"
+          }
+    });
+
+    function scoreBoard (){
+
+    }
+  </script>
+</html>
