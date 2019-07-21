@@ -1,0 +1,21 @@
+body{
+  background-image: url('sal3.png');
+  background-size: cover;
+  text-align: center;
+  font-family: 'Bungee Outline', cursive;
+  font-size: 31px;
+}
+img{
+  display: block;
+  margin-left: 39%;
+}
+#heads, #tails {
+  border: none;
+  border-radius: 40px;
+  background-color: #e6c459;
+  color: black;
+  font-family: 'Bungee Outline', cursive;
+  font-size: 1em;
+  margin-left: 1%;
+  margin-bottom: 30px;
+}
