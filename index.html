@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coin Flip (Node-Served) </title>
+    <!-- INLINE JS and CSS -->
+    <!-- INLINE CSS -->
+    <style media="screen">
+      img{
+        width: 27%;
+        height: 300px;
+      }
+      p{
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coin Flip</h1>
+    <button id="head" type="button" name="button">Heads</button>
+    <button id="tail" type="button" name="button">Tails</button>
+    <img src="https://mathstat.slu.edu/escher/upload/thumb/3/31/Circle-Quarter.png/400px-Circle-Quarter.png" alt="">
+    <h2></h2>
+    <h3>Score</h3>
+    <p>Wins: <span id="wins"></span></p>
+    <p>Loses: <span id="loses"></span></p>
+    <h3>Count</h3>
+    <p>Heads: <span id="headScore"></span></p>
+    <p>Tails: <span id="tailScore"></span></p>
+    <!-- INLINE JS -->
+    <script type="text/javascript">
+    //PSEUDOCODE
+    // 1) input choice, affect DOM
+    // 2) onclick, randomize flip (heads/tail)
+    //    and affect DOM
+    // 3) checkScore()
+    // 4) alertScore()
+    let guess
+    let wins = 0
+    let loses = 0
+    let headCount = 0
+    let tailCount = 0
+    let headSrc = "https://mathstat.slu.edu/escher/upload/thumb/3/31/Circle-Quarter.png/400px-Circle-Quarter.png"
+    let tailSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3_Cg5gCW4Di8-3yihatAtreNRVCWzRYcM-1hyAevcEHNTNZ8WQ"
+
+    function addHeadCount(){
+      headCount += 1
+      document.querySelector("#headScore").textContent = headCount
+      console.log(`headCount: ${headCount}`)
+    }
+
+    function addTailCount(){
+      tailCount += 1
+      document.querySelector("#tailScore").textContent = tailCount
+      console.log(`tailCount: ${tailCount}`)
+    }
+
+    function randomCoinFlip(){
+      if (Math.random()>0.5){
+        addHeadCount()
+        return headSrc
+      } else {
+        addTailCount()
+        return tailSrc
+      }
+    }
+
+    // 1.Initiation
+    document.querySelectorAll("button").forEach((element) => {
+      element.onclick = () => {
+        // document.querySelector("h1").textContent = "Computer began infiltrating your website just now"
+        guess = randomCoinFlip()
+        console.log(element.innerHTML)
+        if ((guess === headSrc && element.innerHTML === "Heads")||(guess === tailSrc && element.innerHTML === "Tails")){
+          wins += 1
+          document.querySelector("h2").textContent = "WIN"
+          document.querySelector("#wins").textContent = wins
+        }
+         else {
+          loses += 1
+          document.querySelector("h2").textContent = "LOSE"
+          document.querySelector("#loses").textContent = loses
+      }
+        document.querySelector("img").src = guess
+      }
+      }
+    )
+    </script>
+  </body>
+</html>
