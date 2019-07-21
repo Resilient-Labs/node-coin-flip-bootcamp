@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coin Flip</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Russo One', sans-serif;
+        background: black;
+        color: gold;
+      }
+      h1 {
+        border-bottom: 1px solid white;
+        width: 100%;
+        color: gold;
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 2px #ff0000;
+        float: left;
+      }
+      section {
+        width: 40%;
+        margin-left: 10%;
+        float: left;
+      }
+      #headsButton, #tailsButton{
+        font-size: 30px;
+        margin-left: 22%;
+        float: left;
+      }
+
+      img {
+        border: 2px solid gold;
+        width: 70%;
+        height: 300px;
+        margin-left: 14%;
+        float: left;
+      }
+      section > p {
+        font-size: 30px;
+        padding-right:22%;
+        width:80%;
+        text-align: center;
+      }
+      p {
+        width: 20%;
+        color:gold;
+        font-size: 20px;
+        margin-left: 20%;
+        float: left;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- HTML -->
+<h1>Heads or Tails?</h1>
+
+    <section>
+      <span href="#" id="headsButton">Heads</span>
+      <span href="#" id="tailsButton">Tails</span>
+      <img alt="">
+
+      <p></p>
+
+    </section>
+
+    <p>Heads or Tails is the practice of throwing a coin in the air and checking which side is showing when it lands, in order to choose between two alternatives, or sometimes used to resolve a dispute between two parties. Which side will YOU choose?</p>
+
+
+
+<!-- JavaScript -->
+
+    <script type="text/javascript">
+
+      document.getElementById("headsButton").addEventListener('click', () =>{
+        let choice = Math.ceil(Math.random()*2)
+        if (choice === 1){
+          choice = "Heads"
+          document.querySelector("img").src="front.png"
+          document.querySelector("p").innerHTML= "You Win"
+        }else{
+          choice = "Tails"
+          document.querySelector("img").src="back.png"
+          document.querySelector("p").innerHTML= "You Lose"
+        }
+      })
+
+      document.getElementById("tailsButton").addEventListener('click', () =>{
+        choice = Math.ceil(Math.random()*2)
+        if (choice === 1){
+          document.querySelector("img").src="back.png"
+          document.querySelector("p").innerHTML= "You Win"
+        }else{
+          choice = "Heads"
+          document.querySelector("img").src="front.png"
+          document.querySelector("p").innerHTML= "You Lose"
+        }
+      })
+
+
+    </script>
+
+
+
+
+
+  </body>
+</html>
