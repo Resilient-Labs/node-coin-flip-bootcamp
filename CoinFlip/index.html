@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 2% 2%;
+      height: 500px;
+
+    }
+
+    img {
+      height: 375px;
+      width: 50%;
+      border-radius: 50%;
+    }
+
+    h1 {
+
+      margin: 0 0;
+      font-size: 8rem;
+      font-weight: 200;
+      text-transform: uppercase;
+
+    }
+
+    section {
+      width: 50%;
+      float: left;
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <section>
+
+    <h1>Coin Flip</h1>
+    <button id="heads" type="button" name="button">heads</button>
+    <button id="tails" type="button" name="button">tails</button>
+
+    </section>
+
+    <section>
+      <p>Good Luck!</p>
+      <img src="" alt="">
+    </section>
+
+
+    <script>
+
+    document.querySelector("#heads").addEventListener("click", function (){
+
+      flippy()
+
+      function flippy(heads, tails) {
+       let result = Math.ceil(Math.random() * Math.ceil(2))
+       console.log(result)
+         if (result === 1){
+
+           document.querySelector("p").innerHTML = "You Win"
+           document.querySelector("img").src = "images/maxresdefault.jpg"
+
+           // return "heads"
+
+         }
+         else {
+           document.querySelector("img").src = "images/images.png"
+          document.querySelector("p").innerHTML = "You Lose"
+           //return "tails"
+         }
+      }
+
+    })
+
+
+
+    document.querySelector("#tails").addEventListener("click", function (){
+
+      flippy()
+
+      function flippy(heads, tails) {
+       let result = Math.ceil(Math.random() * Math.ceil(2))
+       console.log(result)
+         if (result === 1){
+
+           document.querySelector("p").innerHTML = "You lose"
+           document.querySelector("img").src = "images/maxresdefault.jpg"
+
+           // return "heads"
+
+         }
+         else {
+           document.querySelector("img").src = "images/images.png"
+          document.querySelector("p").innerHTML = "You Win"
+           //return "tails"
+         }
+      }
+
+    })
+
+    </script>
+
+  </body>
+</html>
