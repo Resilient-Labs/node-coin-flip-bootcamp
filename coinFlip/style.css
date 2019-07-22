@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(images/batman.png);
+  background-size: 400px 200px;
+  background-position: right;
+}

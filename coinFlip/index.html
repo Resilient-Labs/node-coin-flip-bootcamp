@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+    <style media="screen">
+
+    section{
+      border: 2px solid black;
+      border-radius: 100%;
+      height: 400px;
+      width: 400px;
+      margin: auto;
+      margin-bottom: 34px;
+      margin-top: 53px;
+      background: url(images/Penny-PNG-Clipart.png) no-repeat;
+      background-size: 100%;
+      background-position: 50% 27%;
+    }
+
+    .heads{
+      background: url(images/Penny-PNG-Clipart.png) no-repeat;
+      background-size: 100%;
+      background-position: 50% 27%;
+
+    }
+
+    .tails{
+      background-image: url(images/penny-clipart-penny-tail-2.jpg);
+      background-size: 130% 105%;
+      background-position: 50% 36%;
+    }
+
+    .selected{
+      background-color: green;
+    }
+    html{
+      background: url(images/cave.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    body{
+      background-image: url(chmod 644 /var/www/html/path/to/images/batman.png);
+      background-repeat: no-repeat;
+      height: 720px;
+      background-size: 310px 410px;
+      background-position: 105% 138%;
+    }
+    header{
+      text-align: center;
+
+    }
+    header h1{
+      font-family: 'Butcherman', cursive;
+      margin-bottom: 0;
+      margin-top: 0px;
+      text-align: center;
+      color: yellow;
+      font-size: 68px;
+      text-shadow: -1px -1px 0 #003263, 5px -4px 0 #003263, -1px 1px 0 #003263, 1px 1px 0 #003263;
+    }
+    header h2{
+      color: white;
+      font-size: 20px;
+      margin-top: 0px;
+      padding-left: 70px;
+      padding-right: 70px;
+
+    }
+
+    input{
+      float: left;
+      margin-left: 330px;
+      width: 50%;
+      font-size: 20px;
+
+    }
+    span{
+      border: 5px solid #003263;
+      border-radius: 3%;
+      font-size: 20px;
+      background-color: yellow;
+      margin-left: 45.5%;
+      padding: 10px;
+    }
+
+    p{
+      color: white;
+      font-size: 20px;
+      width: 18%;
+      padding-right: 78px;
+      padding-top: 10%;
+      float: right;
+    }
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <header>
+      <h1>Flip A' Penny</h1>
+      <h2>Welcome to the Bat Cave, filled with mementos from Batman's many adventures. Flip Batman's giant penny, aquired after the case of the Penny Plunderer! </h2>
+    </header>
+    <input type="text" name="" value="">
+    <p></p>
+    <section></section>
+    <span  type="button" name="button">Click to Flip</span>
+  </body>
+
+
+
+
+
+  <script>
+
+    var section = document.querySelector("section")
+    let input = document.querySelector("input").value
+    var randClass = ["heads", "tails"];
+    var number;
+
+ //Do not change the span,
+  document.querySelectorAll("span")[0].addEventListener('click',function(){
+    //randomizes the coin flip
+    number = Math.random()
+    console.log(number)
+
+    //flips the coin
+
+    if(number < .5 ){
+      section.classList.add("heads")
+      console.log(section.classList)
+      if(input === "heads"){
+        document.querySelector("p").innerHTML="Joy is a chemical illusion."
+      }else{
+        document.querySelector("p").innerHTML="I need you on my team, come to the batcave."
+      }
+      setTimeout(function(){
+      section.classList.remove("heads")
+    },2000)
+    }
+    else{
+      section.classList.add("tails")
+      if(input === "heads"){
+        document.querySelector("p").innerHTML="I geuss you won, enjoy it while it lasts."
+      }else{
+        document.querySelector("p").innerHTML="Hide your tears in the falling rain."
+      }
+      setTimeout(function(){
+      section.classList.remove("tails")
+    },2000)
+    }
+  //takes user inout determines win or loose
+
+
+
+
+  })
+
+
+
+  //value = empty string pushes event listener to string
+
+//identify if the player is heads or tails, change button to green if selected
+/*
+function chooseCoin(){
+
+    let button = document.querySelector("button")
+    let youAreHead = document.getElementsByClassName("chooseHeads");
+    let youAreTail = document.getElementsByClassName("chooseTails");
+
+  document.querySelector("button").addEventListener('click',function(){
+
+    document.getElementsByClassName("chooseHeads")
+      button.classList.add("selected")
+  })
+  document.querySelector("button").addEventListener('click',function(){
+
+    document.getElementsByClassName("chooseTails")
+      button.classList.add("selected")
+
+//compares value of button's class list to value of coin's class list. if comparison true a side wins!
+
+if( button.classList.value ===  "chooseHeads selected"){
+    console.log("poop")
+}
+else{
+    consol
+      console.log(button.classList)
+
+      //console.log(button.classList)
+  }
+})
+
+}
+  function compareFlipResultToButton(){
+
+  }
+
+
+*/
+
+
+
+  </script>
+
+  <script type="text/javascript"</script>
+</html>
