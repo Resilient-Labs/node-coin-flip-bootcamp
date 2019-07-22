@@ -1,0 +1,125 @@
+<!-- Create a simple web application that uses the fs and http
+modules. Use http to create the server and fs to read your html
+file. Include vanilla ES6 js in a script tag at the bottom of your
+html file. Try creating a coin flip guessing game! -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+
+      *{
+        box-sizing:border-box;
+      }
+
+      html{
+        font-size: 1rem;
+      }
+
+      h1{
+        font-size: 3rem;
+        margin-left: 14%;
+      }
+
+      p{
+        font-size: 20px;
+      }
+
+      body{
+        background-color: gold;
+      }
+
+      img{
+        border-radius: 100%;
+        margin-left: 10%;
+      }
+
+      span{
+        font-size: 50px;
+      }
+
+      label{
+        font-size: 2rem;
+      }
+
+      button{
+        font-size: 1rem;
+        padding: 0.5%;
+        border-radius: 10%;
+        border: 2px solid black;
+      }
+
+    </style>
+
+    <title></title>
+
+  </head>
+
+  <body>
+    <h1>Coin Flip Game</h1>
+
+    <img src="" alt="">
+
+    <span></span>
+
+
+    <form class="" action="index.html" method="post">
+      <label for="button1 button2">What is your guess?</label>
+      <button id="button1" type="button" name="button" value="heads">Heads</button>
+      <button id="button2" type="button" name="button" value="tails">Tails</button>
+    </form>
+
+
+  <script type="text/javascript">
+
+    let count = 0;
+    let sucreHead = "Head"
+    let sucreTail = "Tail"
+    let run;
+
+    //change to button itself, value. (#button1(chooseSide), randomValue)
+
+    document.querySelector('#button1').addEventListener('click', ()=>{
+      console.log('test')
+      randomValue = getHeadOrTail()
+      determineWinner("heads",randomValue)
+    })
+
+    //how to do the same thing using querySelectorAll ?
+
+    document.querySelector('#button2').addEventListener('click', ()=>{
+      console.log('test')
+      randomValue = getHeadOrTail()
+      determineWinner("tails",randomValue)
+    })
+
+    //command + shift + f = renaming within entire project
+
+    function getHeadOrTail(){
+      let result = Math.random()
+      if (result <= 0.5){
+        console.log(result)
+        document.querySelector('img').src = "https://i.ibb.co/NVc6zzZ/sucre-Tail.png"
+        return "heads"
+      }else {
+        console.log(result)
+        document.querySelector('img').src = "https://i.ibb.co/rcxCXy7/sucre-Head.png"
+        return "tails"
+      }
+    }
+
+    function determineWinner(chooseSide,randomSide){
+      if (chooseSide === randomSide){
+        document.querySelector('span').innerHTML = "You won!"
+      }
+      else{
+        document.querySelector('span').innerHTML = "You lost!"
+      }
+    }
+
+  </script>
+
+  </body>
+
+</html>
