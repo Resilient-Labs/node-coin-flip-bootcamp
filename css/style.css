@@ -1,0 +1,48 @@
+body{
+  background-color: #440D0F;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Quantico', sans-serif;
+}
+h1{
+  font-size: 3rem;
+  color: white;
+}
+p{
+  font-size: 3rem;
+  color: white;
+}
+button{
+  color: white;
+  font-size: 2rem;
+  border-radius: 4px;
+  margin: 2%;
+  background: none;
+  border-width: medium;
+  font-family: 'Quantico', sans-serif;
+}
+.coinText{
+  margin-top: 39%;
+}
+.coin{
+  border-radius: 50%;
+  border: 3px solid white;
+  height: 300px;
+  width: 300px;
+  background-color: #AA767C;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+}
+
+.flip {
+  font-size: 2rem;
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes flip {
+  100% {
+    transform: rotate3d(0, 1, 0, 1080deg)
+  }
+}
