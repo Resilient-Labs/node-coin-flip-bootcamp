@@ -1,0 +1,27 @@
+.coinSpace{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.headerSpace{
+text-align: center;
+}
+.coinSpace{
+  text-align: center;
+}
+#headsButton:hover, #tailsButton:hover{
+  background-color: red;
+}
+.buttonSection{
+  text-align: center;
+  margin-top: 3%;
+}
+h2{
+  text-align: center;
+}
