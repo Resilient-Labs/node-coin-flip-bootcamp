@@ -1,0 +1,13 @@
+body{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F10bv4HhibS9nZC%2Fgiphy.gif&f=1&nofb=15");
+    color: white;
+}
+
+button{
+    height: 50px;
+    width: 10%;
+    border-radius: 25px;
+}
+p{
+  font-size: 40px;  
+}
