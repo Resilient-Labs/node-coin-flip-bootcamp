@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  margin-top: 15%;
+}
+.coin {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: silver;
+  margin: auto;
+  margin-top: 3%;
+}
+
+button {
+  font-size: 20px;
+  background-color: lightgrey;
+  cursor: pointer;
+  border-radius: 5%;
+  margin: 0 1% 0 1%;
+  outline: 0;
+}
+
+button:hover {
+  background: grey;
+  color: white;
+}
+
+p {
+  padding-top: 35%;
+}
+.flip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotate3d(0, 1, 0, 1080deg)
+  }
+}
