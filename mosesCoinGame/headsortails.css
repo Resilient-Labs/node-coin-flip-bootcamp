@@ -1,13 +1,23 @@
+*{
+  font-family: 'Bangers', cursive;
+}
 body{
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F10bv4HhibS9nZC%2Fgiphy.gif&f=1&nofb=15");
+    background-image: url(harvey.jpg);
+    background-size: cover;
     color: white;
 }
-
 button{
-    height: 50px;
+    font-size: 1.5em;
     width: 10%;
-    border-radius: 25px;
+    border-radius: 6px;
+}
+h1{
+  font-size: 3em
 }
 p{
-  font-size: 40px;  
+  font-size: 2em;
+}
+section{
+  margin-top: 30em;
+  margin-left: 3em;
 }

@@ -6,12 +6,11 @@ var tails = 0;
 function click() {
     x = (Math.floor(Math.random() * 2) == 0);
     if(x){
-    	flip("heads");
+    	flip("Heads");
     }else{
-        flip("tails");
+        flip("Tails");
     }
 };
 function flip(coin) {
     document.getElementById("result").innerHTML = coin;
 };
-
