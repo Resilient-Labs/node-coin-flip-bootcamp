@@ -17,3 +17,4 @@ It's only appropriate that this "Heads or Tails" guessing game feature Gotham Ci
 ## How To Use:
   1. Run node server.js
   2. Navigate to localhost:8000 in your browser.
+  3. Click a button and hope you chose wisely.
