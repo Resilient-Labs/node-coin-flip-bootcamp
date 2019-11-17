@@ -2,8 +2,6 @@
 This project is a simple coin flipping web application. The user will have 2 options, heads or tails. The user will be able to click on one or the other and as the result will be randomized. If the user chooses heads, it web app will either say heads or tails. If the user won, the result will match what the user chose. If the user lost, the result will NOT match what the user chose.
 
 
-**Link to project:** https://infallible-torvalds-6bccca.netlify.com/
-
 ![alt tag](https://github.com/TimTran-Dev/node-coin-flip-bootcamp/blob/answer/Coin%20flip%20image.png)
 
 ## How It's Made:
