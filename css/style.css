@@ -1,0 +1,60 @@
+h1{
+  color: black;
+  font-family: fantasy;
+  font-weight: 800;
+}
+h2{
+  color:black;
+  font-family: fantasy;
+  font-size: 16px;
+}
+section {
+  border: 1px solid transparent;
+  height: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  /* background-image: url("https://cdn.hipwallpaper.com/i/40/86/5UCeYk.jpg");
+  background-size: cover; */
+}
+/* #title, #rules{ */
+  border: 1px solid red;
+  height: 30px;
+  width:100%;
+}
+header {
+  border: 1px solid black;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* background-image: url("https://cdn.hipwallpaper.com/i/40/86/5UCeYk.jpg");
+  background-size: cover; */
+}
+#result {
+  height: 300px;
+}
+#title {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+#rules{
+  width: 100%;
+}
+div {
+  height: 450px;
+  width:45%;
+  background-image: url("https://cdn.hipwallpaper.com/i/40/86/5UCeYk.jpg");
+  background-size: cover;
+}
+img#placeImg {
+  padding-top: 18px;
+  margin-right: -100%;
+}
+button {
+  margin-left: 45%;
+  height: 24px;
+  width: 70px;
+}
