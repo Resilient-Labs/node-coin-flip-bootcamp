@@ -1,6 +1,38 @@
-h1{
-  color: gold;
+*{
+  box-sizing: border-box;
 }
-h2{
-  color:red;
+html{
+  font-size: 10px;
+  font-family: 'Baloo 2', cursive;
+}
+body{
+  background-color: bisque;
+}
+
+h1{
+  color: rgb(0, 89, 255);
+  text-align: center;
+  font-size: 3rem;
+}
+span{
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+img{
+  height: 100px;
+  width: 100px;
+
+}
+button{
+  height: 50px;
+  width: 20%;
+  margin: 40%;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  color: rgb(255, 255, 255);
+  font-size: 2.4rem;
+  font-weight: bold;
+
 }
