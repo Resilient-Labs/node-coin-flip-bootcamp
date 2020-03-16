@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+
+}
+
+
+body{
+
+background-image: url("../images/coingif.gif");
+
+}
+span{
+  font-size: 8vw;
+  color:red;
+}
+section{
+  text-align: center;
+}
+button{
+
+  font-size: 8vw;
+      border-radius: 42%;
+      border: 7px solid red;
+      border-style: groove;
+      color: red;
+      margin-top: 21%;
+
+
+}
+p{
+  font-size: 8vw;
+  color:red;
+
+}
