@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.3rem;
+}
+body{
+  background-color: orange;
+  color: #006602;
+}
+img{
+  height: 250px;
+  width: 25%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+button{
+  padding: 1%;
+  border: 3px solid black;
+  margin: 1%;
+}
