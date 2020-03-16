@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  align-content: center;
+  text-align: center;
+}
+body {
+  background-color: aquamarine;
+  align-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+section {
+  width: 100%;
+  height: auto;
+}
+.buttonSec {
+  font-size: 25px;
+}
+button {
+  font-size: 25px;
+}
+.resultSec {
+  font-size: 40px;
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+}
+img{
+  height: 200px;
+  width: 200px;
+  margin: 50px auto;
+}
