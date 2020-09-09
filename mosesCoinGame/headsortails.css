@@ -1,0 +1,23 @@
+*{
+  font-family: 'Bangers', cursive;
+}
+body{
+    background-image: url(harvey.jpg);
+    background-size: cover;
+    color: white;
+}
+button{
+    font-size: 1.5em;
+    width: 10%;
+    border-radius: 6px;
+}
+h1{
+  font-size: 3em
+}
+p{
+  font-size: 2em;
+}
+section{
+  margin-top: 30em;
+  margin-left: 3em;
+}
