@@ -1,0 +1,23 @@
+body{
+  background-color: teal;
+}
+h1{
+  color: navy;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+  color:red;
+}
+button{
+  height: 29px;
+  width: 11%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border: 4px solid gold;
+  background-color: gold;
+}
