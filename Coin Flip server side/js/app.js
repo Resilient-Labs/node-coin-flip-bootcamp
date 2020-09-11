@@ -21,10 +21,11 @@ function checkWinner(choice){
     .then((data) => {
       console.log(data);
       console.log("player choice",playerChoice)
+      document.getElementById('player').innerHTML = `You chose: ${playerChoice}`
       if(data === true){
-        document.getElementById('answer').innerHTML = 'You Win!'
+        document.getElementById('answer').innerHTML = 'You Win! :)'
       }else if (data === false){
-        document.getElementById('answer').innerHTML = 'You a losa'
+        document.getElementById('answer').innerHTML = 'You Lose! :('
       };
     })
     .catch(err => console.error(err))
