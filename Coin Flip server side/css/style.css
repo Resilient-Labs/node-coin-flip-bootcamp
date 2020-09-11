@@ -1,0 +1,32 @@
+body{
+    font-family: 'Play', sans-serif;
+    background-color: #6aaab9;
+    color: #2B3537;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 55px;
+}
+
+.coin{
+    width: 20%;
+}
+
+p{
+    font-size: 24px;
+}
+
+#head, #tails{
+    width: 67px;
+    height: 29px;
+}
+
+#head{
+    margin-right: 50px;
+}
