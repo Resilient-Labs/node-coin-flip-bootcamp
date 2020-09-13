@@ -15,7 +15,7 @@
      </ul>
       
   <h2> Lesson Learned </h2>
-     <p>Learned to use the terminal as a way to start my server and running my file on a server and also learned to display images within the server by adding          my content type to png <p> 
+     <p>Learned to use the terminal as a way to start my server and running my file on a server and also learned to display images within the server by changing          my content type to png <p> 
   
   
   <h2>Installation </h2>
