@@ -1,22 +1,30 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+<h1>Project: Node Coin Flip Game </h1>
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+   ![Alt Text](https://raw.githubusercontent.com/JohnbelMDev/node-coin-flip-bootcamp/answer/image.png)
+   
+   <h2> <b>Project Scope</p>  used the fs and http modules. Used http to create the server and fs to read  html file.</h2>
+   
+   <h3>Tech Used </h3>
+     <ul>
+        <li> HTML5</li>
+        <li> CSS </li>
+        <li> JAVASCRIPT ES6  </li>
+        <li> NODEJS </li>
+     </ul>
+      
+  <h2> Lesson Learned </h2>
+     <p>Learned to use the terminal as a way to start my server and running my file on a server and also learned to display images within the server by adding          my content type to png <p> 
+  
+  
+  <h2>Installation </h2>
+  <ol>
+    <li>Clone repo</li>
+    <li>Install node https://nodejs.org/en/</li></li>
+    <li>npm install -g nodemon on your terminal or command prompt</li>
+    <li>cd into project folder</li>
+    <li>Run nodemon server.js</li>
+    <li>Navigate to your browser and enter <b>'Localhost:8000' </b></li>
+     <li>Once complete make sure to end the server by selecting control c to clear</li>
+</ol>
