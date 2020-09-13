@@ -1,3 +1,4 @@
+//House Moses: Kim, Carlosalberto, Farrah and Gabriel
 let heads = document.getElementById('head');
 let tails = document.getElementById('tails');
 let answer = document.getElementById('answer');
@@ -30,37 +31,11 @@ function checkWinner(choice){
     })
     .catch(err => console.error(err))
 }
-
+//fetchs for the page winner and uses template literal to target input
+// logic displayed in server side
 
 
 heads.addEventListener('click',selectHeads)
 console.log("works")
 tails.addEventListener('click',selectTails)
 console.log("works")
-//
-// const http = require('http');
-// const fs = require('fs')
-// const url = require('url');
-// const querystring = require('querystring');
-// const figlet = require('figlet')
-//
-//
-// const server = http.createServer(function(req, res) {
-//   res.writeHead(200, {'Content-Type': 'text/html'})
-//   fs.readFile('index.html', function(error, data) {
-//     if (error) {
-//       res.writeHead(404)
-//       res.write('Error: File Not Found')
-//     }else {
-//       res.write(data)
-//     }
-//     res.end()
-//   })
-// })
-// server.listen(8000, function(error) {
-//   if (error) {
-//     console.log('Oops I think you broke something', error)
-//   }else {
-//     console.log('Shhh Im listening on port 8000')
-//   }
-// });
