@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px solid black;
+  padding: 1rem;
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  height:200px;
+  width: 200px;
+  border: 5px solid white;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
+  border-radius: 15px;
+  font-size: 2rem;
+  border:10px solid #ef233c;
+  color: #ef233c;
+  outline: none;
+  font-weight: bold;
+}
+
+button:hover{
+  border: 10px solid yellow;
+
+}
+#score{
+  font-size: 2rem;
+}
+#msg{
+    font-size: 3rem;
+    color: yellow;
+    animation: shake 0.5s infinite;
+    /* animation-iteration-count: infinite; */
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
