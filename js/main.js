@@ -19,15 +19,15 @@ function play(chosenSide) {
         .then((data) => {
             //heads/tails image
             if (data.checker === "heads") {
-                results.innerHTML = `<img src="https://images-na.ssl-images-amazon.com/images/I/51xs7F%2BtP5L._AC_.jpg" alt="">`;
+                results.innerHTML = `<img src="https://cdn11.bigcommerce.com/s-4ulzs/images/stencil/1280x1280/products/12235/13432/apismz7sk__35703.1583015166.jpg?c=2" alt="">`;
             } else {
                 results.innerHTML = `<img src="https://bjc.edc.org/June2017/bjc-r/img/5-algorithms/img_flipping-a-coin/Tails.png" alt="">`;
             }
             //feedback
             if (data.checker === chosenSide) {
-                feedback.innerHTML = `You got it right`;
+                feedback.innerHTML = `Ding Ding, Correct!`;
             } else {
-                feedback.innerHTML = `You got it wrong`;
+                feedback.innerHTML = `Womp Womp, Next Time!`;
             }
         });
 }
