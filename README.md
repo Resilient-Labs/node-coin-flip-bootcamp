@@ -1,22 +1,26 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Week 08 Project: Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+Live Code: 
 
-### How to submit your code for review:
+# How It's Made:
+### Tech used: 
+HTML, CSS, JS, and Node. Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Coin Flip Final](coinflip.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+
+
+# Lessons Learned:
+Used JavaScript to randomize the choices between heads or tails. Familiarized myself with server side and how it works with HTML
+
+# Examples:
+
+Take a look at these couple examples that I have in my own portfolio:
+
+Wu-Tang Generator: https://github.com/Kim-Flores/wu-tang-generator-bootcamp/tree/answer
+
+Matching Game: https://github.com/Kim-Flores/matching-card-bootcamp/tree/answer
+
+Palindrome Checker: https://github.com/Kim-Flores/node-palindrome-bootcamp/tree/answer
+
