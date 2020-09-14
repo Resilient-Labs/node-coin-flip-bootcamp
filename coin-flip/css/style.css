@@ -1,0 +1,27 @@
+body{
+  text-align: center;
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-family: 'Ultra', serif;
+  font-size: 5rem;
+  color: black;
+  margin-top: 15rem;
+}
+
+button {
+  font-size: 1.5rem;
+  width: 5.2rem;
+  height: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+#result {
+  font-family: 'Sora', sans-serif;
+}
