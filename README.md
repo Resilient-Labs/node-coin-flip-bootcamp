@@ -1,22 +1,15 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Super Mario Bros. Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+#### Project Scope: This is a Super Mario Bros.- themed coin flip guessing game. The user clicks either the "heads" or "tails" button to lock in their guess. The button triggers the randomization of "heads" or "tails" that is then displayed to the user. The score of correct guesses is also shown and updated as the user plays. There is also a reset button if the user wants to start over.
 
-### How to submit your code for review:
+- Try it Here: https://supermariobros-coinflip.herokuapp.com/
+![Coin Flip Screenshot](/coinScreen.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# How it was made:
+#### HTML5, CSS3, Javascript, API, JSON, Node.js
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+# Optimizations:
+#### The hidden randomization of "heads" or "tails" is done in the back-end server created with Node.js using the fs and http modules. This result is then sent to the client to be displayed on their browser. The score of correct guesses is tracked on the client side through the game object and is displayed after every guess.
+
+# Lesson Learned:
+#### I can prevent users from possibly manipulating the results by keeping the randomization of "heads" or "tails" to the back-end server. I also learned how to apply the animation property in a new way by applying it to the background colors to help drive the Super Mario Bros. theme.
