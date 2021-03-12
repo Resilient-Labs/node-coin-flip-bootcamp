@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hide {
+  visibility: hidden;
+}
