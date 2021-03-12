@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  height: 10rem;
+  width: 10rem;
+  perspective: 20rem;
+}
+
+.coin{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.coinFace{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.coinFaceheads{
+  background: url(../img/quarterHeads.png);
+  background-size: cover;
+}
+
+.coinFacetails{
+  background: url(../img/quarterTails.png);
+  background-size: cover;
+  transform: rotateY( 180deg );
+}
+.coin.isFlipped{
+  transform: rotateY(180deg);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
