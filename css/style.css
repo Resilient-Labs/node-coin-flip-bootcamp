@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+}
+
+.background {
+    background-image: url("coin-toss.png");
+    background-size: 100%;
+    background-color: #5CE1E6;
+    background-repeat: no-repeat;
+}
+div{
+    text-align: center;
+}
+.coins-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 10% 8% 0 8%;
+}
+
+@media screen and (max-width: 800px) {
+    .coins-container {
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 10vh;
+    }
+
+    .coin img {
+        width: 50%;
+    }
+    
+    .heads-container, .tails-container {
+        margin-top: 30px
+    }
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 2em;
+}
+.animated-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none !important;
+    transition: transform 250ms;
+    transition-timing-function: ease-out;
+}
+
+.animated-button:hover {
+  transform: translateY(-20px);
+}
+
+.modal-title{
+    width: 50%;
+    margin-left: 25%;}
