@@ -1,4 +1,4 @@
-# Card Matching Game
+# Fancy Coin Flipper
 
 ![alt tag](https://i.ibb.co/4sT1sy4/coinFlip.png)
 
