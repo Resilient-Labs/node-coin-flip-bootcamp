@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: orange;
+  text-align: center;
+}
+
+.parent {
+  width: 30%;
+  margin: 0px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 40%;
+  height: 300px;
+}
+
+.parent {
+  margin-top: 100px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+h2 {
+  color: white;
+  margin-top: 10px;
+}
+
+h3{
+  padding-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: white;
+  font-size: 2rem;
+  padding: 5px;
+  margin-bottom: 20px;
+}
