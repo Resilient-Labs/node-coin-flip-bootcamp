@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    background: url(https://i2.wp.com/wesleyankids.org/wp-content/uploads/2013/01/Heads-or-Tails.jpg) no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    border: 1px solid black;
+    font-size: 2.4rem;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: antiquewhite;
+  }
+  button {
+    width: 80px;
+    height: 30px;
+  }
+  section {
+    text-align: center;
+    /* border: 1px solid black; */
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+  
+  
+  
+  
+  
+  
