@@ -9,3 +9,5 @@ This Coin Flip game allows the user to press the flip button to initiate the ani
 -CSS
 -JAVASCRIPT
 -NODE.JS
+
+ ![Screenshot](coinFlipPic.png)
