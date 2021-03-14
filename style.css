@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 36px;
+}
+
+.btn{
+    margin-left: 45%;
+    margin-bottom: 90px;
+}
+
+button{
+    padding:9px;
+    border-radius: 27px;
+}
+
+button:hover{
+    background-color: fuchsia;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+}
+
+body{
+    background-image: url("https://media.giphy.com/media/3oEhmML78QY5s4rDpK/giphy.gif");
+}
