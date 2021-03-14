@@ -1,0 +1,172 @@
+*{
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: 'Yusei Magic', sans-serif;
+  }
+  
+  body{
+
+	background-image: url(../pic/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(113, 27, 130, 0.2);
+	height: 100vh;
+	padding: 0;
+	margin: 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+  }
+
+  h1{
+	  font-size: 4rem;
+  }
+
+  .secAllContent{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  border: .1rem solid white;
+	  width: 90%;
+	  margin-top: 2%;
+	  background: white;
+	  opacity: 75%;
+  }
+
+  .secChoice {
+	  display: flex;
+	  justify-content: center;
+
+	  align-items: center ;
+  }
+
+  .secChoice h2 {
+	  font-size: 4rem;
+  }
+
+  .secTitle{
+	  text-align: center;
+  }
+
+  .button{
+	  font-size: 4rem;
+	  border-radius: 15%;
+  }
+
+  .secResults{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+  }
+
+  .h2Results{
+	  font-size: 5rem;
+	  margin-top: 0%;
+  }
+
+  .h3Results{
+	  margin-top: 0%;
+  }
+
+  .secScoreboard{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+  }
+
+  h3, h4{
+	  font-size: 3rem;
+  }
+
+  .secScoreboard h3 {
+	  margin-top: 0%;
+  }
+
+  .h4Score{
+	  margin-top: 0%;
+	  margin-bottom: 4%;
+  }
+
+  #coin {
+	position: relative;
+ }
+
+ #buttonHead{
+
+	margin-right: 4%;
+}
+
+#buttonTail{
+	margin-left: 4%;
+}
+
+ 
+ .click {
+   /* background-color:#e9c46a; */
+   color:#fff;
+   padding:15px 15px;
+   border-radius:30px;
+   display:inline-block;
+   transition:2s;
+   cursor:pointer;
+   margin-top: 0%;
+ }
+ 
+ .click:hover {
+	 opacity:0.5;
+	 background-color: #ef233c;
+   }
+
+   .animate-coin {
+	animation: flip 2s 1;
+  }
+  
+  @keyframes flip {
+	0% {
+	  transform: scale3d(1,1,1) rotateX(0deg);
+	  
+	}
+	50% {
+	  transform: scale3d(1,1,1) rotateX(3600deg);
+	  
+	}
+	100% {
+	  transform: scale3d(1,1,1) rotateX(7200deg);
+	  
+	}
+  }
+  
+img{
+
+	height: 10rem;
+}
+
+@media only screen and (max-width: 40rem) {
+
+	h1{
+		font-size: 3rem;
+	}
+
+	.secChoice h2, h3{
+
+		font-size: 2.5rem;
+	}
+
+	.button{
+		font-size: 2rem;
+
+	}
+
+	#buttonHead{
+
+		margin-right: 4%;
+	}
+
+	#buttonTail{
+		margin-left: 4%;
+	}
+
+
+}
+  
