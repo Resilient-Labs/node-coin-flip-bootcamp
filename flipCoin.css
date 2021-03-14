@@ -1,0 +1,92 @@
+* {
+  font-family: 'Ranchers', cursive;
+}
+
+h1 {
+  font-size: 50px;
+  color: lightgreen;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+}
+
+h3{
+  font-size: 30px;
+  color: lightgreen;
+}
+
+body {
+  /* padding-top: 50px;
+  background: pink;
+  -webkit-perspective: 800px; */
+  font-family: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: url(https://i.pinimg.com/originals/e3/7b/52/e37b52544f05418d007e385393e89221.jpg);
+  width: 450px;
+  height: 666px;
+}
+
+button {
+  font-size: 20px;
+  background: lightgreen;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin:auto;
+  margin-left: 100px;
+}
+h1 {
+  text-align: center;
+}
+
+#coin-flip-cont {
+  width: 250px;
+  height: 320px;
+  position: relative;
+  /* top: calc(50% - 100px);
+left: calc(50% - 100px); */
+}
+
+#coin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  /* background: yellow; */
+}
+
+#coin .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* background: #ffc728; */
+  color: #333;
+}
+
+#coin .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* background: #fafafa; */
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.coin2 {
+  transform: rotateY(720deg);
+}
+
+.coin3 {
+  transform: rotateY(720deg);
+}
