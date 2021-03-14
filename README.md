@@ -1,6 +1,6 @@
 # Mario Coin Flip
 
-This project reinforces my understanding on the core concepts of OOP and Javascript ES6 features and their applications. I wanted to keep my code as compact as possible. I wanted to do a Neon theme for this project! The product came out clean, eye catching and fun! By the end of it. I'm excited for the future projects, so stay tuned!
+This project is a simple heads or tails coin flip game with a mario backdrop theme. It uses Node JS to host on the server side, but most of the work is done on the client side. 
 
 &emsp;
 
@@ -11,11 +11,8 @@ This project reinforces my understanding on the core concepts of OOP and Javascr
 ## How Its Made 
 
 **Tech used:** 
-HTML, CSS, JS, and Node JS. Create a simple web application that uses the fs and http modules to validate if a string is a palindrome server side.
 
-# What I Learned
-
-
+HTML, CSS, JS, and Node JS.
 
 ### My Other Projects 
 
