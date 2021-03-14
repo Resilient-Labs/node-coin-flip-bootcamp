@@ -6,4 +6,4 @@
 
 [Check out my portfolio][https://tamikasterlin.com/]
 
-[!Application Screenshot](coinscreenshot.png)
+![Application Screenshot](coinscreenshot.png)
