@@ -1,22 +1,20 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# coin-flip
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+This is a kawaii-themed, coin flip generator. The player guesses 'Narwhal' or 'Octopus'. After they choose, the coin (or in this version--the mushroom) will flip. The coin will land on 'Narwhal' or 'Octopus'.
 
-### How to submit your code for review:
+Link to Project: https://kawaii-flip.netlify.app/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![Project Image](/pic/flip.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+### How It's Made:
+
+The results of the coin (or in this version--the mushroom) flip is determine using the Math.random() method. 'Narwhal' and 'Octopus' both have a 50% chance of being landed on. 
+
+
+### Lesson Learned
+
+I learned how to use the 'setTimeout' method to delay the evaluation of an expression. In this application, I delayed the rendering of the results to the DOM, until the coin/mushroom flip had finished.
+ 
+
+###
