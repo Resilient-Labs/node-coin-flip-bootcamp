@@ -1,10 +1,4 @@
-/*
-1. click the button and flip the coin for heads or tails
-2. Math.floor(Math.random() * 2)
- answer == 1, odd else its even.
- 3.increment the heads and tails when landed on it.  
-*/
-
+//Worked with Garner Gang to complete - Asianna, Julie, Brian, Ziya, Dash, Wade, Tanecia
 document.querySelectorAll('h3').forEach(img => img.addEventListener('click', flipCoin))
 
 let answer = document.querySelector('h2')
