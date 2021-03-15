@@ -84,7 +84,7 @@ left: calc(50% - 100px); */
 }
 
 .coin2 {
-  transform: rotateY(720deg);
+  transform: rotateY(540deg);
 }
 
 .coin3 {
