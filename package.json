@@ -1,0 +1,42 @@
+{
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  "name": "cointoss",
+  "version": "1.0.0",
+  "description": "coin flipping ",
+  "main": "server.js",
+=======
+=======
+>>>>>>> Stashed changes
+  "name": "coinflip",
+  "version": "1.0.0",
+  "description": "coin flip",
+  "main": "server.js",
+  "dependencies": {
+    "figlet": "^1.5.0"
+  },
+  "devDependencies": {},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+=======
+  "author": "Alief",
+  "license": "ISC"
+>>>>>>> Stashed changes
+=======
+  "author": "Alief",
+  "license": "ISC"
+>>>>>>> Stashed changes
+}

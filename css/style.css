@@ -1,0 +1,41 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  background-color: black;
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  width: 100%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+=======
+h1{
+  color: red;
+}
+>>>>>>> Stashed changes
+=======
+h1{
+  color: red;
+}
+>>>>>>> Stashed changes
