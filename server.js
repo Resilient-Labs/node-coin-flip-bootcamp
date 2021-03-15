@@ -7,6 +7,7 @@
 //nodeJS -- helps differentiate difference between webpage and browser
 //browser and JS can work independent 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //
 
 //require=requesting whatever inside para file
@@ -28,6 +29,8 @@ http.createServer(function (req, res) {
   });
 }).listen(8000);
 =======
+=======
+>>>>>>> Stashed changes
 
 //require= requesting whatever inside para file
 //http-set up set webserver
@@ -93,4 +96,7 @@ const server = http.createServer(function(req, res) {
 });
 
 server.listen(8000);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

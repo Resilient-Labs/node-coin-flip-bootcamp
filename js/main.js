@@ -3,7 +3,10 @@
 //client side
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 document.querySelector('#flipCoin').addEventListener('click', fetchingCoin)
 
 function fetchingCoin(){
@@ -16,12 +19,16 @@ function fetchingCoin(){
     })
 }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 document.querySelector('#flipCoin').addEventListener('click', coinFlips)
 
 function coinFlips() {
     let probability=Math.ceil(Math.random()*2)
     if (probability%2===0){
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         document.querySelector('img').src='img/head.png'
         document.querySelector('p').innerHTML='Head Wins'
@@ -30,12 +37,17 @@ function coinFlips() {
         document.querySelector('img').src='img/tail.png'
         document.querySelector('p').innerHTML='Tail Wins'
 =======
+=======
+>>>>>>> Stashed changes
         document.querySelector('img').src='../img/head.png'
         document.querySelector('span').innerHTML='Head Wins'
         console.log('head')
     }else{
         document.querySelector('img').src='../img/tail.png'
         document.querySelector('span').innerHTML='Tail Wins'
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         console.log('tail')
     }
