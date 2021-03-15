@@ -1,0 +1,60 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+img{
+  height: 20rem;
+  transition: 0.5s ease-in-out;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.coinArea{
+  height: 20rem;
+}
+.Score{
+  font-size: 2rem;
+}
+h5{
+  display: inline;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button{
+  display: block;
+    margin: 3rem auto;
+    height: 5rem;
+    width: 10%;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 1px grey;
+}
+button:hover{
+  background-color: white;
+}
