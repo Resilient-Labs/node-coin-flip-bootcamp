@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
-const querystring = require('querystring');
 
 http.createServer(function (req, res) {
   const page = url.parse(req.url).pathname;
@@ -32,7 +31,12 @@ http.createServer(function (req, res) {
       res.write(data);
       res.end();
     });
-  }else if (page == '/js/main.js'){
+  }else if(page == '/img/coinBackground.jpg') {
+      fs.readFile('img/coinBackground.jpg', function(err, data) {
+        res.write(data);
+        res.end();
+      });
+    }else if (page == '/js/main.js'){
     fs.readFile('js/main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
