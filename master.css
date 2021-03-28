@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url(coin.gif);
+  background-repeat: ;
+  background-size: contain;
+  background-color: white;
+}
+
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBody {
+  height: 80vh;
+  width: 75vw;
+  margin: 5% auto;
+  background-color: 255, 255, 255, .3;
+  max-width: 75rem;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+}
+
+img {
+  transition: 0.5s ease-out;
+}
+
+.tail {
+  background-color: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Coiny', cursive;
+}
+
+.start {
+  padding: 10px;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  margin: 0% 38%;
+  background-color: inherit;
+  font-family: 'Coiny', cursive;
+}
+
+.headScore {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 50%;
+  margin: 0% 35%;
+  font-family: 'Coiny', cursive;
+}
+
+.tailScore {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 50%;
+  margin: 0% 36%;
+  font-family: 'Coiny', cursive;
+}
+
+.tail {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.head {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* .head {
+  margin-top: 188px;
+}
+
+.coinBox {
+  border: 1px solid black;
+}
+
+.head {
+  width: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: -100px;
+}
+
+.tail {
+  width: 100px;
+  height: 100px;
+  margin-right: -100px;
+}
+
+.flip {
+  animation: flipIt 1s linear infinite;
+}
+
+.tail {
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes flipIt {
+  0% {
+    width: 0px;
+    height: 188px;
+  }
+
+  25% {
+    width: 188px;
+    height: 188px;
+  }
+
+  50% {
+    width: 0px;
+  }
+
+  100% {
+    width: 0px;
+  }
+} */
