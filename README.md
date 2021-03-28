@@ -1,22 +1,23 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Mario Coin Flip
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+This project is a simple heads or tails coin flip game with a mario backdrop theme. It uses Node JS to host on the server side, but most of the work is done on the client side. 
 
-### How to submit your code for review:
+&emsp;
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img src="https://github.com/DashlinS/node-coin-flip-bootcamp/blob/answer/images/coinflipdemo.gif" width="700">
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Click Here to go to the website!]() -->
+
+## How Its Made 
+
+**Tech used:** 
+
+HTML, CSS, JS, and Node JS.
+
+### My Other Projects 
+
+Check out some of my other projects working with node.js!
+
+* [Wu-Tang Name Generator](https://github.com/DashlinS/wu-tang-generator-bootcamp/tree/answer)
+* [Yugioh Matching Card Game](https://github.com/DashlinS/matching-card-bootcamp/tree/answer)
+* [Palindrome Checker](https://github.com/DashlinS/node-palindrome-bootcamp/tree/answer)
