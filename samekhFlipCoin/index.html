@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip A Coin</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='container'>
+        <div class='stats'>
+            <p id='headsCount'>Heads: 0</p>
+            <p id='tailsCount'>Tails: 0</p>
+        </div>
+        <div class='coin'>
+            <div class='heads'>
+                <img src="heads.svg" >
+            </div>
+            <div class='tails'>
+                <img src="tails.svg" >
+            </div>
+        </div>
+        <section class=buttons>
+            <section>
+                <p id='yourGuesses'>number of correct guesses: 0</p>
+                <button id='guessOne'>Heads?</button>
+                <button id='guessTwo'>Tails</button>
+            </section>
+            
+            <button id='flipButton'>FlipCoin</button>
+            <button id='resetButton'>reset</button>
+        </section>
+    </div>
+
+    <div class='secondContainer'>
+        <p class='result'>let's see if your guess is any good</p>
+    </div>
+    
+    <script src='script.js'></script>
+</body>
+</html>

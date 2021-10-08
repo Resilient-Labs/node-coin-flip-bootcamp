@@ -1,0 +1,15 @@
+{
+  "name": "samekhflipcoin",
+  "version": "1.0.0",
+  "description": "a nice cute coin flip game that logs the winner server side",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "samekh resh",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.5.2"
+  }
+}
