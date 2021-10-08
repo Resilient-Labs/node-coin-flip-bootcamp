@@ -15,37 +15,23 @@ const server = http.createServer(function(req, res) {
       res.end();
     });
   }
-  
-  
   else if (page == '/api') {
     if('playerGuess' in params){
       let coin = Math.floor(Math.random() * 2) === 0 ? 'heads' : 'tails'
       let coinImage = coin === 'heads' ? 'css/img/heads.jpeg' : 'css/img/tails.png'
 
-      if(params['playerGuess']== 'heads'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
-        const objToJson = {
-          userGuess: "heads",
-          flipResult: `${coin}`,
-          flipResultImg: `${coinImage}`,
-        }
-        res.end(JSON.stringify(objToJson));
-      }//student = leon
-      else if(params['playerGuess'] != 'heads'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
-        const objToJson = {
-          userGuess: 'tails',
-          flipResult: `${coin}`,
-          flipResultImg: `${coinImage}`,
-        }
-        res.end(JSON.stringify(objToJson));
-      } //student != leon
+      let playerGuess = params['playerGuess']
+
+      let result = coin === playerGuess ? true : false
+      res.writeHead(200, {'Content-Type': 'application/json'});
+      const objToJson = {
+        flipResult: coin,
+        flipResultImg: coinImage,
+        outcome: result
+      }
+      res.end(JSON.stringify(objToJson));
     }//student if
   }//else if
-  
-  
-  
-  
   else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
       res.write(data);
@@ -82,4 +68,4 @@ const server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(8000);
+server.listen(8100);
