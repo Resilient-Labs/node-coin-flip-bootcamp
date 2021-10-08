@@ -1,0 +1,80 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+  color:rgb(81 85 130);
+  background: url('/img/background.png');
+  background-size:cover;
+  background-position: center ;
+  background-attachment: fixed;
+  text-transform: uppercase;
+}
+
+div{
+  
+  display: block;
+  margin: 0 auto;
+}
+
+#gameboard{
+  margin-top: 5em;
+  width:  45em;
+}
+
+img{
+  width: 10em;
+
+}
+
+
+h1{
+  color:rgb(81 85 130);
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Architects Daughter', Arial, Helvetica, sans-serif ;
+}
+
+#center{
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#heads{
+  background-color: rgb(109 103 174);
+  color: rgb(81 85 130);
+  height:2em;
+  width:10em;
+  border:none;
+  font-family: 'Architects Daughter', Arial, Helvetica, sans-serif ;
+  margin-left: 1em;
+}
+#tails{
+  background-color: rgb(109 103 174);
+  color: rgb(81 85 130);
+  height:2em;
+  width:10em;
+  border:none;
+  font-family: 'Architects Daughter', Arial, Helvetica, sans-serif ;
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
