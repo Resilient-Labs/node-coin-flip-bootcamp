@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align: center;">
+        <h1>Tis is a Coin Flip.</h1>
+        <form action="/heads" method="post">
+        <button type="submit" id="heads">cabeza</button>
+    </form>
+    <form action="/tails" method="post">
+        <button type="submit" id="tails">cola</button>
+    </form>
+    <h2><%= data.answer %></h2>
+
+
+    <h2>Score: <span id="score"><%= data.score %></span></h2>
+    <script src="main.js"></script>
+
+        
+    </body>
+</html>
