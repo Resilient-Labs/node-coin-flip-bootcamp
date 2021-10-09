@@ -12,12 +12,10 @@ const server = http.createServer(function(request, response) {
 			response.end()
 		})
 	} else if (page == '/api'){
-		if('coin' in params){
-			console.log('coin in params')
+		if('coin' in params){ // api?coin=
 			if(params['coin'] == 'heads'){
 				response.writeHead(200, {'Content-Type': 'application/json'})
 				let flip = (Math.floor(Math.random() * 2)) === 0 ? 'heads' : 'tails'
-				console.log('heads')
 				const objToJSON = {
 					face: flip,
 				}
@@ -26,10 +24,10 @@ const server = http.createServer(function(request, response) {
 			} else if (params['coin'] == 'tails'){
 				response.writeHead(200, {'Content-Type': 'application/json'})
 				let flip = (Math.floor(Math.random() * 2)) === 0 ? 'heads' : 'tails'
-				console.log('tails')
 				const objToJSON = {
 					face: flip
 				}
+				console.log(objToJSON)
 				response.end(JSON.stringify(objToJSON))
 			}
 		}
