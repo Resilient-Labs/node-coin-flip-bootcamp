@@ -17,6 +17,6 @@
 Example:
 ```
 I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+I feel good about my code: 3
+i enjoyed this project but i had some trouble writing the logic, would like to practice this a bit more
 ```
