@@ -1,0 +1,33 @@
+{
+  "name": "coin-flip-bootcamp",
+  "version": "1.0.0",
+  "description": "Guess heads or tails and flip a coin.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nktruong/node-coin-flip-bootcamp.git"
+  },
+  "keywords": [
+    "coin",
+    "heads",
+    "tails",
+    "flip",
+    "Resilient",
+    "Coders",
+    "2021B"
+  ],
+  "author": "Nathan Truong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nktruong/node-coin-flip-bootcamp/issues"
+  },
+  "homepage": "https://github.com/nktruong/node-coin-flip-bootcamp#readme",
+  "dependencies": {
+    "figlet": "^1.5.2",
+    "tailwindcss": "^2.2.16"
+  }
+}
