@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <div class="title">
+            <h2>Heads or Tails?</h2>
+            <h2>Heads or Tails?</h2>
+            <h2>Heads or Tails?</h2>
+
+        </div>
+
+        <span>Wins: </span> <span id="wins">0</span>
+    
+        <button id="heads">Heads</button>
+        
+        <button id="tails">Tails</button>
+    
+        
+        <div class="smallContainer">
+            
+            <p></p>
+            
+        </div>
+        <div class="coin">
+            
+            <img src="/tails.png" alt="tails" class="tails">
+            <img src="/heads.png" alt="heads" class="heads">
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById('heads').addEventListener('click', userPickedHeads)
+        document.getElementById('tails').addEventListener('click', userPickedTails)
+        const coinFlip = document.querySelector('.coin')
+        let count = 0
+
+            function userPickedHeads() {
+                let outcome = document.querySelector('p')
+                let wins = document.getElementById('wins')
+
+                let coin = "front"
+
+                // Math.ceil(Math.random() * 2 ) == 2 ? coinFlip.classList.add('animateHeads') : coinFlip.classList.add('animateTails');
+
+                fetch(`/api`)
+                    .then(response => response.json())
+                    .then((data) => {
+                        console.log(data);
+
+                        data.coin === coin ? coinFlip.classList.add('animateHeads') : coinFlip.classList.add('animateTails');
+
+                        setTimeout(() => {
+                            data.coin === coin ? outcome.innerText = "Winner!" : outcome.innerText = "Try Again!";
+                            data.coin === coin ? count++ : count
+                            count < 0 ? count = 0: count
+                            wins.textContent = count
+                        }, 6500)
+                    });
+                    coinFlip.classList.remove('animateHeads')
+                    coinFlip.classList.remove('animateTails')
+            }
+
+            function userPickedTails() {
+                let outcome = document.querySelector('p')
+                let wins = document.getElementById('wins')
+                let coin = "back"
+                
+                // Math.ceil(Math.random() * 2) == 1 ? coinFlip.classList.add('animateTails') : coinFlip.classList.add('animateHeads');
+                
+                fetch(`/api`)
+                .then(response => response.json())
+                .then((data) => {
+                    console.log(data);
+
+                        data.coin === coin ? coinFlip.classList.add('animateTails') : coinFlip.classList.add('animateHeads');
+
+                        setTimeout(() => {
+                            data.coin === coin ? outcome.innerText = "Winner!" : outcome.innerText = "Try Again!";
+                            data.coin === coin ? count++ : count
+                            count < 0 ? count = 0 : count
+                            wins.textContent = count
+                        }, 6500)
+                    });
+                coinFlip.classList.remove('animateHeads')
+                coinFlip.classList.remove('animateTails')
+            }
+
+    </script>
+</body>
+
+</html>
