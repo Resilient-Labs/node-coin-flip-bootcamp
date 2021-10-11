@@ -36,18 +36,75 @@
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
+     color: #fff;
+     font-size: 2vh;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Lato', Helvetica, Arial, sans-serif;
+     text-align: center;
+     background-color: #2C55A9;
+     /* background-image: url('img/circus-background.jpeg');
+     background-size: cover; */
 }
-
-
+h1 {
+     font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+     font-size: 8vh;
+     margin-top: 5%;
+     margin-bottom: 1%;
+}
+p {
+     font-size: 3vh;
+}
+#coin {
+     width: 250px;
+     height: 250px;
+     position: relative;
+     left: calc(50% - 120px );
+     margin-top: 1%;
+}
+#winLose {
+     font-size: 5vh;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-
+button {
+     color: #fff;
+     margin: 1%;
+     margin: 1%;
+     font-size: 2vw;
+     padding: 0.5% 3%;
+     border-radius: 30px;
+     border: 2px solid white;
+     background-color: transparent;
+}
+button:hover {
+     color: grey;
+     border:2px solid grey;
+     background-color: #213866;
+}
+#coin {
+     position: relative;
+}
+   
+.animate-coin {
+     animation: flip 2s 1;
+}
+   
+@keyframes flip {
+     0% {
+       transform: rotateX(0deg);
+       
+     }
+     50% {
+       transform: rotateX(3600deg);
+       
+     }
+     100% {
+       transform: rotateX(7200deg);
+       
+     }
+}
 /******************************************
-/* ADDITIONAL STYLES
+Style Inspiration From:
+https://codepen.io/le0864/pen/pbmoVQ
 /*******************************************/

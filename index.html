@@ -8,19 +8,25 @@
 
 	<title>Blank Template</title>
 
-	<!-- external CSS link -->
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<button id="heads">heads</button>
-	<button id="tails">tails</button>
-	<h2>You picked <span id="guess"></span></h2>
-	<img src="" alt="">
-	<h2 id="outcome"></h2>
-	<h2 id="winLose"></h2>
-	<!-- <button>reveal</button> -->
+	<h1>Coin Flip</h1>
+	<p>Select 'heads' or 'tails to make a guess and flip the coin. Good luck!</p>
+	<div id="coin"></div>
+	<section id="container">
+		<button id="heads">heads</button>
+		<button id="tails">tails</button>
+		<h2 id="winLose"></h2>
+		<h2 id="guess"></h2>
+		<h2 id="outcome"></h2>
+	</section>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
