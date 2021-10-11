@@ -5,7 +5,7 @@ This coin flip game compares a users guess to a randomized coin flip result
 
 ## Link to Project: 
 
-![Coin Flip Game Demo](url)
+![Coin Flip Game Demo](https://github.com/cat-goncalves/node-coin-flip-bootcamp/blob/answer/css/img/coin-flip-demo.gif?raw=true)
 
 ## How It's Made:
 Tech used: HTML, CSS, JavaScript, Node.js
