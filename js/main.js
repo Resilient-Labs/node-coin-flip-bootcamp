@@ -1,3 +1,6 @@
+
+//collaborated with team Hayden to successfully complete the project
+
 document.querySelector('#heads').addEventListener('click', flipCoin)
 document.querySelector('#tails').addEventListener('click', flipCoin)
 
@@ -47,3 +50,4 @@ const choice = e.target.innerText
 //
 //     request.send();
 // }
+// collaborated with team Hayden to successfully complete the project
