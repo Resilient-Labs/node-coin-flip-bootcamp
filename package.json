@@ -1,0 +1,15 @@
+{
+  "name": "coinflipapp",
+  "version": "1.0.0",
+  "description": "a coin flip app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.5.2"
+  }
+}
