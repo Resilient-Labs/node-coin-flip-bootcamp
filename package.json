@@ -1,0 +1,16 @@
+{
+  "name": "coinflip",
+  "version": "1.0.0",
+  "description": "Coin Flip Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Ernest Pough",
+  "license": "ISC",
+  "devDependencies": {
+    "figlet": "^1.5.2",
+    "nodemon": "^2.0.13"
+  }
+}
