@@ -1,0 +1,64 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+     box-sizing: border-box;
+   }
+   
+   /* Clear fix hack */
+   .clearfix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+   }
+   
+   .clear {
+        clear: both;
+   }
+   
+   .alignright {
+        float: right;
+        padding: 0 0 10px 10px; /* note the padding around a right floated image */
+   }
+   
+   .alignleft {
+        float: left;
+        padding: 0 10px 10px 0; /* note the padding around a left floated image */
+   }
+   
+   /******************************************
+   /* BASE STYLES
+   /*******************************************/
+   
+   h2{
+     font-size: 2rem;
+}
+body {
+     background-attachment: fixed;
+     background-image: url('https://www.teahub.io/photos/full/168-1689731_wallpaper-girl-concentration-composure-coin-toss-coin-flip.jpg');
+     background-size: cover;
+     background-repeat: repeat;
+     display: flex;
+     font-family: 'Arial', sans-serif;
+     color: gold;
+     font-size: 1.3em;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ } 
+   
+   
+   /******************************************
+   /* LAYOUT
+   /*******************************************/
+   
+   
+   /******************************************
+   /* ADDITIONAL STYLES
+   /*******************************************/
+   
