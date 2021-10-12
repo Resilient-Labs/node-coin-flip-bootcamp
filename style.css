@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-image: url(pic/image.jpg);
+    background-size: cover;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    box-shadow: 12px 12px 2px 1px rgba(218, 24, 186, 0.479);
+    border-radius: 10px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+
+
+}
+
+.stats{
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500px;
+    font-size: 35px;
+}
+
+.coin{
+  
+    right: 40px;
+    top: 120px;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+         transform-style: preserve-3d;
+    /* animation: spin-tails 3s forwards; */
+}
+
+.heads, .tails{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tails{
+    transform: rotateX(180deg);
+}
+
+
+@keyframes spin-tails{
+    0%{
+        transform: rotateX(0);
+    }
+   100%{
+    transform: rotateX(1980deg);
+    }
+
+}
+
+@keyframes spin-heads{
+    0%{
+        transform: rotateX(0);
+    }
+   100%{
+    transform: rotateX(2160deg);
+    }
+
+}
+
+.buttons{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+button{
+    width: 120px;
+    padding: 10px 0;
+    border: 2.5px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#flip-button{
+    background-color: rgb(178, 39, 87);
+    color: white;
+}
+
+flip-button:disabled{
+    background-color: rgb(178, 39, 87);
+    color: white;
+}
+
+#reset-button{
+    background-color: rgb(112, 145, 233);
+    color: white;
+}
+
