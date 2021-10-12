@@ -17,6 +17,6 @@
 ```
 I completed the challenge: 5
 I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+Group: Shannon M, Miriam K, David N, Roxana L, Samekh R, Alexa M
 ```
 Play against a bot on a coinflip, 50-50 chance heads/tails, and return win/lose.
