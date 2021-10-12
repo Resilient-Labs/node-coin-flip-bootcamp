@@ -1,8 +1,9 @@
 const http = require("http");
-const fs = require("fs"); //module that allows you to read the fle system
+const fs = require("fs"); //module (library) that allows you to read the fle system
 const url = require("url"); //allows you to look at the url path to find what needs to be found
 const querystring = require("querystring"); //enables us to look at query parameters in our url
 const figlet = require("figlet"); //allows your 404 to look  little fanciers
+// import {create} from modules/canvas.js
 
 const server = http.createServer(function (req, res) {
   const page = url.parse(req.url).pathname;
@@ -15,28 +16,16 @@ const server = http.createServer(function (req, res) {
       res.end();
     });
   } else if (page == "/api") {
-    
-    // let i = Math.floor(Math.random() * 2)
-    if ("search" in params) {
-        if(params['search'] == true){
-           res.writeHead(200, { "Content-Type": "application/json" }); 
-           const objToJson = {
-                i: i,
-            }
-            return heads++;
-        }else{
-            
-            const objToJson = {
-                i: i,
-            }
-            return tails++;
-            }
-            res.end(JSON.stringify(objToJson));
-            
-
-      
+    if('guess' in params){
     }
+    let coinToss = Math.floor(Math.random() * 2)
 
+    res.writeHead(200, { "Content-Type": "application/json" });
+    const objToJson = {
+      coinToss: coinToss ? true : false //this line is a ternary which is saying if cointoss is 1 we return true and if it's 0 we return false, which can then be compared to the player guess of true vs false, as opposed to comparing true to 1 and false to 0
+    };
+    
+    res.end(JSON.stringify(objToJson));
     //student = leon
   } //else if
   else if (page == "/style.css") {
@@ -76,7 +65,7 @@ const server = http.createServer(function (req, res) {
     });
   }
 });
-server.listen(8002);
+server.listen(8003);
 
 //call is the flip button or the reset button /api/guessHeads
 ///api/guessTails

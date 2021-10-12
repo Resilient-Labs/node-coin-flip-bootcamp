@@ -1,7 +1,7 @@
 let heads = 0 //this variable is a counter for the amount of times you roll heads
 let tails = 0//counter for amount of times you roll tails
 let correctGuesses = 0 //your correct guesses
-let playerGuessHeads = false
+let playerGuess = false
 let headGuess = document.querySelector('#guessOne') 
 let tailsGuess = document.querySelector('#guessTwo')
 let coin = document.querySelector('.coin') //is the image being selected in the DOM for manipulation
@@ -19,23 +19,24 @@ function randomFlip(){
     console.log(`randomflip`)
     // let i = Math.floor(Math.random() * 2)
     coin.style.animation = 'none'
-    fetch(`/api?search=${i}`)
+    fetch(`/api?guess=${playerGuess}`)
         .then(res => res.json())
         .then(data => {
-            if(data.i){
+            console.log(data)
+            if(data.coinToss){
                 setTimeout(function(){
                     coin.style.animation = 'spin-heads 3s forwards'
                 }, 100)
-                // heads++
-                checkForHeads(data.i)
+                heads++
+                checkForWin(data.coinToss)
                 console.log('heads is now: ' + heads)
                 
-            }else if (data.i){
+            }else{
                 setTimeout(function(){
                     coin.style.animation = 'spin-tails 3s forwards'
                 }, 100)
-                // tails++
-                checkForTails(data.i)
+                tails++
+                checkForWin(data.coinToss)
                 console.log('tails is now: ' +tails)
             }
             setTimeout(updateStats, 3000)
@@ -64,31 +65,47 @@ resetBtn.addEventListener('click', () => {
     updateStats()
 })
 
-function checkForHeads(y){
-    if(playerGuessHeads === true && y === 1){
+//mycode
+
+function checkForWin(coinToss){ 
+    console.log('this is the players guess', playerGuess, 'this is the players coin toss', coinToss)
+    if(playerGuess === coinToss){ 
         console.log('omg you got it right!!!)')
+        correctGuesses++
+        console.log("this is a correct guess" + correctGuesses) //checking to see if the correct guess are showing in the dom. 
+        document.querySelector('#yourGuesses').innerText = 'number of correct guesses: ' + correctGuesses
     }else{
-        console.log('whomp whompwhonpm')
+        document.querySelector('#yourGuesses').innerText = 'number of correct guesses: ' + correctGuesses
     }
 }
 
-function checkForTails(x){
-    if(playerGuessHeads === false && x === 0){
-        console.log('omg you got it right!!!)')
-    }else{
-        console.log('whomp whompwhonpm')
-    }
-}
+// function checkForHeads(y){
+//     if(playerGuess === true && y === 1){
+        
+//     }else{
+//         console.log('whomp whompwhonpm')
+//     }
+// }
+
+// function checkForTails(x){
+//     if(playerGuess === false && x === 0){
+//         console.log('omg you got it right!!!)')
+//         correctGuesses++
+//         console.log(correctGuesses)
+//     }else{
+//         console.log('whomp whompwhonpm')
+//     }
+// }
 
 function playerGuessesHeads(){
     
-    playerGuessHeads = true
-    console.log(playerGuessHeads)
+    playerGuess = true//change to guess
+    console.log(playerGuess)
 }
 function playerGuessesTails(){
-    
-    playerGuessHeads = false
-    console.log(playerGuessHeads)
+    // console.log(event.target)
+    playerGuess  = false
+    console.log(playerGuess)
 }
 headGuess.addEventListener('click', playerGuessesHeads)
 tailsGuess.addEventListener('click', playerGuessesTails)

@@ -27,6 +27,11 @@ body{
     perspective: 300px;
 }
 
+.containsResults, .buttons{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
 .stats{
     text-align: right;
     color: black;
@@ -100,6 +105,8 @@ button{
     background-color: white;
     color: black;
 }
+
+
 
 #resetButton{
     background-color: purple;

@@ -22,21 +22,30 @@
                 <img src="tails.svg" >
             </div>
         </div>
-        <section class=buttons>
+
+        <section class='buttons'>
             <section>
-                <p id='yourGuesses'>number of correct guesses: 0</p>
+                <p>which one will you guess</p>
                 <button id='guessOne'>Heads?</button>
                 <button id='guessTwo'>Tails</button>
             </section>
-            
-            <button id='flipButton'>FlipCoin</button>
-            <button id='resetButton'>reset</button>
         </section>
+
+        <section class='buttons'>
+            <section class='startOrStop'>
+                <button id='flipButton'>FlipCoin</button>
+            <button id='resetButton'>reset</button>
+            
+        </section>
+    
+        <div class='containsResults'>
+            <p class='result'>let's see if your guess is any good</p>
+            <p id='yourGuesses'>number of correct guesses: 0</p>
+        </div>
+        
     </div>
 
-    <div class='secondContainer'>
-        <p class='result'>let's see if your guess is any good</p>
-    </div>
+    
     
     <script src='script.js'></script>
 </body>
