@@ -1,0 +1,39 @@
+body{
+    font-family: helvetica, arial, sans-serif;
+    align-items: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section{
+    /* display: block; */
+    text-align: center;
+    align-items: center;
+}
+
+.titleSection{
+width: 100%;
+background: lightblue;
+border: 2px solid;
+height: 400px;
+margin-top: 50px;
+}
+
+.buttons{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 25%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid;
+    float: left;
+    margin-top: 50px;
+    /* position: relative; */
+}
+
