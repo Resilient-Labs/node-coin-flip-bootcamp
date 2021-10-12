@@ -7,7 +7,7 @@ This is a project for creating a coin flip game with the javascript logic server
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, node.js
 
 This project was implemented using node.js without express. This means that the node.js core modules had to be hard coded including routes to be able to provide the logic back. A fetch response was used to send out the request, and a response was returned server side.
 
