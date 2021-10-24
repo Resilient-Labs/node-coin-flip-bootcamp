@@ -12,11 +12,11 @@ let i = Math.floor(Math.random() * 2);
 function makeReq(){
     const userName = document.querySelector("#userName").value;
     coin.style.animation = "none";
-
+    
   fetch(`/api?student=${userName}`)
     .then(response => response.json())
     .then((data) => {
-        // console.log(data);
+        console.log(userName);
         document.querySelector("#personName").textContent = data.result;
         if(data.result == 'winner' && userName == 'heads' || data.result == 'loser' && userName == 'tails') {
             setTimeout(function() {

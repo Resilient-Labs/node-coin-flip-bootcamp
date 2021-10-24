@@ -93,6 +93,7 @@ body {
  }
  .coin img{
      width: 145px;
+     
  }
  .heads, .tails{
      position: absolute;
