@@ -1,0 +1,101 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-color: rgb(0,0,0);
+  overflow: hidden;
+}
+
+.coin-flip{
+  width: 100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  position: absolute;
+  animation: fly 1.5s ease-in-out ;
+}
+.coin-flip img{
+  width: 100px;
+}
+
+.coin-heads, .coin-tails {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes flip-head {
+  0%, 100% { transform: rotateX(0deg); }
+  50% { transform: rotateX(180deg); }
+}
+
+@keyframes flip-tail {
+  0%, 100% { transform: rotateX(180deg); }
+  50% { transform: rotateX(0deg); }
+}
+
+h2,h1{
+  color: white;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+section{
+  margin: 150px  0 0  0;
+text-align: center;
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
