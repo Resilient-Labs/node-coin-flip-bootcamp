@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Coin Toss</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Coin Toss</h1>
+
+		<form action="">
+			<label id="money" for="">Go forth player</label>
+			<select name="Coin options" id="coins">
+				<option value="0">Choose a side</option>
+				<option value="heads">Heads</option>
+				<option value="tails">Tails</option>
+			</select>
+			<input type="submit">
+		</form>
+
+		
+		<h2>Which side:<span id="tossMessage"></span></h2>
+		
+		<section class="hidden"  id="heads">
+			<img src="img/squidward_head.png" alt="">
+		</section>
+		<section class="hidden" id="tails">
+			<img src="img/patrick_butt.png" alt="">
+		</section>
+		
+		<p id="gameMessage"></p>
+		
+		<h2><span id="winMessage"></span></h2>
+
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

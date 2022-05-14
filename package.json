@@ -1,0 +1,15 @@
+{
+  "name": "coin_toss",
+  "version": "1.0.0",
+  "description": "'coin toss game'",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "shay",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.5.2"
+  }
+}
