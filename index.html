@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Coin Toss Game</title>
+</head>
+<body>
+  <section class="top">
+    <h1>What will it be? 🤔 </h1>
+    <label for="player">Player Choice:<select name="player" class="playerChoice"><option value="heads">Heads </option> <option value="tails"> Tails</option> </select></label>
+    <div class="coin"></div>
+    <div class="result"> Result:<span id="coinResult"></span>
+    <!-- span innerText= "You got it!" if coinResults === playerChoice
+    or display "...Not today" if coinResult !=== playerChoice -->
+  </section>
+  <section class="bottom">
+    <button class= "flip" type="button">Flip!</button>
+    <button class= "reset" type="button">Reset</button>
+  </section>
+  
+<script type="text/javascript" src="./main.js" ></script>
+ <!-- <script type="text/javascript" src="./index.js"></script> 
+</html> -->
