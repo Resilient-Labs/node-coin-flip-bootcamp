@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    flex-direction: column;
+  }
+  h1, h2, form, button, div, h3{
+    align-self: center;
+  }
+
+  html{
+    background: url(../coin.gif) no-repeat top center;
+    background-size: cover;
+  }
