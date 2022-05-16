@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 50%;
+    margin: 50px 25%;
+    text-align:center;
+}
