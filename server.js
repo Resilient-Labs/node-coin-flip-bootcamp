@@ -14,6 +14,11 @@ const querystring = require('querystring');// is the paramater of the url
       res.write(data);
       res.end();
     });
+  }else if (page == '/style.css'){
+    fs.readFile('style.css', function(err, data) { // serves up css
+      res.write(data);
+      res.end();
+    });
   }else if (page == '/api') { // this is what we will use for the fetch call
     if('bet' in params){
         let tails = 1
@@ -56,11 +61,12 @@ const querystring = require('querystring');// is the paramater of the url
         res.end(JSON.stringify(resultForServer));
       }
     }
-  }else if (page == '/style.css'){
-    fs.readFile('style.css', function(err, data) {
+  }else if (page == '/main.js'){
+    fs.readFile('main.js', function(err, data) {
+      res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();
     });
   }
-  })
+})
 server.listen(8005);

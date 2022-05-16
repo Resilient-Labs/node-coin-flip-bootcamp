@@ -3,6 +3,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
 body{
@@ -37,10 +38,6 @@ header p{
 
 /* BUTTONS */
 
-.buttons{
-    text-align: center;
-    height: 300px;
-}
 
 .bet{
     width: 20%;
