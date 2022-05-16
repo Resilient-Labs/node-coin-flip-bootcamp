@@ -16,6 +16,18 @@ const server = http.createServer(function (req, res) {
             res.write(data)
             res.end()
         })
+    } else if (page == '/assets/images/heads.png') {
+        fs.readFile('assets/images/heads.png', function (err, data) {
+            res.writeHead(200, {'Content-Type': 'image/png'})
+            res.write(data)
+            res.end()
+        })
+    } else if (page == '/assets/images/tails.jpg') {
+        fs.readFile('assets/images/tails.jpg', function (err, data) {
+            res.writeHead(200, {'Content-Type': 'image/jpg'})
+            res.write(data)
+            res.end()
+        })
     } else if (page == '/api'){
         // use url we created to check if the query (property) is in the param object
         if ('chosenCoinFlip' in params){
@@ -27,12 +39,15 @@ const server = http.createServer(function (req, res) {
                     prediction: 'heads',
                     randomNumber: Math.floor(Math.random() * 2),
                     result: '',
+                    imgSRC: '',
                     compare(){
                         // 0 is heads, 1 is tails
                         if (this.randomNumber === 0){
-                            this.result = 'Heads, Correct'
+                            this.result = 'The coin landed on heads! You predicted correctly!'
+                            this.imgSRC = 'assets/images/heads.png'
                         } else {
-                            this.result = 'Tails, You Suck'
+                            this.result = 'The coin landed on tails! You predicted incorrectly!'
+                            this.imgSRC = 'assets/images/tails.jpg'
                         }
                     }
                 }
@@ -45,12 +60,15 @@ const server = http.createServer(function (req, res) {
                     prediction: 'tails',
                     randomNumber: Math.floor(Math.random() * 2),
                     result: '',
+                    imgSRC: '',
                     compare(){
                         // 1 is heads, 0 is tails
                         if (this.randomNumber === 0){
-                            this.result = 'tails, Correct'
+                            this.result = 'The coin landed on tails! You predicted correctly!'
+                            this.imgSRC = 'assets/images/tails.jpg'
                         } else {
-                            this.result = 'heads, You Suck'
+                            this.result = 'The coin landed on heads! You predicted incorrectly!'
+                            this.imgSRC = 'assets/images/heads.png'
                         }
                     }
                 }
@@ -58,8 +76,8 @@ const server = http.createServer(function (req, res) {
                 res.end(JSON.stringify(coin))
             }
         }
-    } else if (page == '/stylesheets/style.css') {
-        fs.readFile('stylesheets/style.css', function (err, data) {
+    } else if (page == '/assets/stylesheets/style.css') {
+        fs.readFile('assets/stylesheets/style.css', function (err, data) {
           res.write(data); 
           res.end();
         });

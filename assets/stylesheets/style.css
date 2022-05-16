@@ -5,4 +5,82 @@
 html {
     font-size: 62.5%;
     text-align: center;
+    background: #FAF8ED;
+    font-family: 'Dosis', Arial, Helvetica, sans-serif;
 }
+
+/* body styling */
+
+body {
+    margin: 1% 10%;
+}
+
+header {
+    background: #CEA1B3;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.intro {
+    font-size: 2rem;
+}
+
+.label, .selectBox {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+.flip {
+    font-size: 2rem;
+    background: #515438;
+    height: 50px;
+    border-radius: 48%;
+    color: white;
+}
+
+.flip:hover {
+    background:gold;
+    color: black;
+}
+
+.winnerLoser {
+    font-size: 2.5rem;
+}
+
+.flipIMG {
+    height: 300px;
+}
+
+/* footer styling */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #A69B71;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    width: 30%;
+  }
+  
+  li {
+    float: left;
+    margin: 1%;
+    font-size: 1.5rem;
+    padding: 0;
+    width: 50%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+    transition: color .5s;
+  }
+  
+  a:hover {
+    color: rgb(255, 0, 195);
+  }
