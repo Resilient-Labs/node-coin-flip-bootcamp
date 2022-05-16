@@ -13,7 +13,7 @@ let heads = document.querySelector('#heads')
 let tails = document.querySelector('#tails')
 let message = document.querySelector('#gameMessage')
 let userChoice = document.querySelector('#coins')
-let button = document.querySelector('input')
+let button = document.querySelector('button')
 let tossMessage = document.querySelector('#tossMessage')
 let winMessage = document.querySelector('#winMessage')
 
@@ -38,14 +38,14 @@ function showHeadTailImages(coinResponse){
     if(coinResponse == 'heads'){
         //console.log('Its heads')
         tossMessage.innerText = 'Its heads'
-        heads.classList.remove('hidden')
-        tails.classList.add('hidden')
+        //heads.classList.remove('hidden')
+        //tails.classList.add('hidden')
 
     }else{
         //console.log('Its tails')
         tossMessage.innerText = 'Its tails'
-        tails.classList.remove('hidden')
-        heads.classList.add('hidden')
+        //tails.classList.remove('hidden')
+        //heads.classList.add('hidden')
     }
     checkIfPlayerWon(coinResponse)
 }
@@ -55,10 +55,10 @@ function checkIfPlayerWon(coinResponse){
 
     if (userChoice.value == coinResponse){
         //console.log('You win')
-        winMessage.innerText = 'You win'
+        winMessage.innerText = 'I guess you win, punk.'
     }else{
         //console.log('You Lose')
-        winMessage.innerText = 'You Lose'
+        winMessage.innerText = 'I guess you lose, punk.'
     }
 }
 

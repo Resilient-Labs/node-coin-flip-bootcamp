@@ -4,7 +4,9 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<title>Coin Toss</title>
 
 		<!-- external CSS link -->
@@ -15,22 +17,23 @@
 		<h1>Coin Toss</h1>
 
 		<form action="">
-			<label id="money" for="">Go forth player</label>
+			<label id="money" for="">Do you feel lucky, punk? Do ya?</label>
 			<select name="Coin options" id="coins">
 				<option value="0">Choose a side</option>
 				<option value="heads">Heads</option>
 				<option value="tails">Tails</option>
 			</select>
-			<input type="submit">
+			<!-- <input type="submit"> -->
+			<button><span class="button_top">Submit</span> </button>
 		</form>
 
 		
-		<h2>Which side:<span id="tossMessage"></span></h2>
+		<h2>The flip: <span id="tossMessage"></span></h2>
 		
-		<section class="hidden"  id="heads">
+		<section class="hidden images"  id="heads">
 			<img src="img/squidward_head.png" alt="">
 		</section>
-		<section class="hidden" id="tails">
+		<section class="hidden images" id="tails">
 			<img src="img/patrick_butt.png" alt="">
 		</section>
 		

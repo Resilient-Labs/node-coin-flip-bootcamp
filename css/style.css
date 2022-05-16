@@ -10,6 +10,14 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+body{
+  background-image: url(../img/flip-coin1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Fredericka the Great', cursive, sans-serif;
+  color: white;
+}
 section{
   height: 200px;
   width: 100px;
@@ -20,11 +28,47 @@ img{
 .hidden{
   display: none;
 }
-body{
-  color: orange;
+select{
+  font-family: 'Fredericka the Great', cursive, sans-serif;
+
 }
 
+/* From uiverse.io by @Voxybuns */
+button {
+  /* Variables */
+ --button_radius: 0.50em;
+ --button_color: black;
+ --button_outline_color: white;
+ font-size: 10px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+ font-family: 'Fredericka the Great', cursive, sans-serif;
+ padding: 0;
+}
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.button_top {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid var(--button_outline_color);
+ border-radius: var(--button_radius);
+ padding: 0.50em 1em;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+/* .button_top:hover{
+  background:gold;
+} */
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}

@@ -53,13 +53,23 @@ const server = http.createServer(function(req, res) {
           res.write(data);
           res.end();
         });
-    }else if (page == '/img/patrick_butt.png'){
+    }
+    else if (page == '/img/patrick_butt.png'){
       fs.readFile('img/patrick_butt.png', function(err, data) {
         res.writeHead(200, {'Content-Type': 'image/png'});
         res.write(data);
         res.end();
       });
-    }else{
+    }
+    else if (page == '/img/flip-coin1.gif'){
+      fs.readFile('img/flip-coin1.gif', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/gif'});
+        res.write(data);
+        res.end();
+      });
+    }
+ 
+    else{
       figlet('404!!', function(err, data) {
         if (err) {
             console.log('Something went wrong...');
