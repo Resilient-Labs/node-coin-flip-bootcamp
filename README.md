@@ -1,22 +1,15 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Node Coin Flip
+Created a name generator that uses javascript to pic a name.
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+Link to project: https://wutangnombregenerator.netlify.app/
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+![p](https://user-images.githubusercontent.com/101950707/168525101-21f7192d-df7c-41ba-815b-02d9e71dec56.png)
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+Tech used: HTML, CSS, JavaScript
+
+Using javascript to put names in an array and giving each option in the html a value. Adding the values together and doing some simple math give a sum which we pointed to the inde in the array of names.
+
+
