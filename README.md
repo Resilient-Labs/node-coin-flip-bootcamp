@@ -1,15 +1,14 @@
 # Node Coin Flip
-Created a name generator that uses javascript to pic a name.
+A simple coin flip game.
 
 Link to project: https://wutangnombregenerator.netlify.app/
 
-
-![p](https://user-images.githubusercontent.com/101950707/168525101-21f7192d-df7c-41ba-815b-02d9e71dec56.png)
+![p](https://user-images.githubusercontent.com/101950707/168527172-68820865-892c-4d73-acf9-d530803b18ca.png)
 
 
 ## How It's Made:
 Tech used: HTML, CSS, JavaScript
 
-Using javascript to put names in an array and giving each option in the html a value. Adding the values together and doing some simple math give a sum which we pointed to the inde in the array of names.
+Utilizing javascript to randomize the probability of a coin outcome.
 
 
