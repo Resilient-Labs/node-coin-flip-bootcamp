@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.player{
+    background-image: url("starter.jpeg");
+    height:400px;
+    width:400px;
+    margin-bottom: 100px;
+   
+}
+
+.heads{
+    background-image: url("head.jpeg");
+    height:400px;
+    width:400px;
+    margin-bottom: 100px;
+
+}
+
+.tails{
+    background-image: url("tails.jpeg");
+    height:400px;
+    width:400px;
+    margin-bottom: 100px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+form,
+button,
+div,
+h3 {
+    align-self: center;
+}
+
+
+

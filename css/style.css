@@ -1,0 +1,95 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  height:750px;
+  
+}
+
+
+
+body{
+  display:flex;
+  height:750px;
+  width:100%;
+  background-color: tan;
+  justify-content: space-around;
+  
+}
+
+
+h1, h2, form, button, div, h3{
+  align-self: center;
+  margin: 0 px;
+  padding: 0px;
+
+}
+
+h1{
+  color:gold;
+  text-shadow: 3px 2px black;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+h3{
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+section{
+  display: flex;
+ flex-direction: column;
+  width:50%;
+  background-color: lightblue;
+  border: 3px solid gold;
+}
+
+.player {
+  background-color: blue;
+  background-image: url("image/starter.jpeg");
+  height: 300px;
+  width: 400px;
+  margin-top:10px;
+}
+select{
+  font-size: 2em;
+}
+
+
+img{
+  width:100%;
+}
+
+img:hover{
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0%{
+    transform: (0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+button{
+  font-size: 1.5em;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
