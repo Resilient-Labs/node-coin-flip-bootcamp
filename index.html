@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Coin Flip App</h1>
+        <p class="intro">Can you predict the flip?</p>
+    </header>
+
+    <main>
+        <section>
+            <form >
+                <label for="gamePlay" class="label">Make your prediction:</label>
+                <select name="headsOrTails" class="selectBox">
+                    <option value="default">---Select---</option>
+                    <option id="headsCoin" value="heads">Heads</option>
+                    <option id="tailsCoin" value="tails">Tails</option>
+                </select>
+            </form>        
+        </section>
+
+        <section>
+            <button class="flip">FLIP</button>
+            <h3 class="winnerLoser"></h3>
+            <img src="" alt="" class="flipIMG">
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><i class="fa-solid fa-code"></i> Visit my <a href="https://aharleydev.netlify.app/" target="_blank">Portfolio</a></li>
+            <li><i class="fa-brands fa-twitter"></i> Follow me on <a href="https://twitter.com/DevHarleyA" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+    <small>&copy; HarleyADev 2022</small>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
