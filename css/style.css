@@ -1,0 +1,11 @@
+body {
+    display:flex;
+    flex-direction: column;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,57,57,1) 35%, rgba(33,183,218,1) 88%, rgba(65,33,218,1) 88%, rgba(0,212,255,1) 100%);
+  }
+  h1, h2, form, button, div, h3{
+    align-self: center;
+    color: rgb(208, 176, 57);
+    padding: 8px;
+  }
