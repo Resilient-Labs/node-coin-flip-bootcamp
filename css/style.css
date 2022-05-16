@@ -1,0 +1,58 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+div{
+  flex: 1;
+}
+main{
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Mali', 'Helvetica', sans-serif;
+}
+main, h1, h2, section, h3{
+  align-self: center;
+  text-align: center;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+html{
+  background-color: #baf8ff;
+}
+h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h2, h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+label, select, button{
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'Mali', 'Helvetica', sans-serif;
+}
+button{
+  background-color: #fa9a05;
+  border-radius: 5px;
+}
