@@ -1,0 +1,26 @@
+*{
+  text-align: center;
+}
+body{
+  background-image: url(casino.jpg);
+  background-size:cover;
+  color: lightgrey;
+  margin-top: 10rem;
+}
+div{
+  width: 250px;
+  margin: auto;
+  background-color: black;
+  height: 200px;
+}
+h1{
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+p{
+  font-size: 1.5rem;
+}
+.bet{
+  color: black;
+  font-weight: bold;
+}
