@@ -1,0 +1,28 @@
+html {
+    background-image: url(/flipPic.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 15% 20% 0 20%;
+}
+
+h1,
+p,
+div {
+    align-self: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 3rem;
+    width: 100vw;
+    text-align: center;
+}
