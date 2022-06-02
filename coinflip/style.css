@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', 'Poppins', 'Futura', sans-serif;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+main {
+    font-family: 'Quicksand', 'Poppins', 'Futura', sans-serif;
+    width: 50%;
+    margin: 0 25%;
+    text-align:center;
+    display:flexbox;
+    justify-content: center;
+}
+
