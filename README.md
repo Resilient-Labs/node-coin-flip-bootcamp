@@ -15,5 +15,5 @@
 </section>
 
 <h2 align="center"> Languages used</h2>
-<p align="center"> HTML, CSS, Javascript  </p>
+<p align="center"> HTML, CSS, Javascript, node.js  </p>
 
