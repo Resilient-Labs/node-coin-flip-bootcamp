@@ -1,7 +1,9 @@
 <section>
   <h1 align="center">Coin Flip</h1>
 <p align="center">
- This is a website with a Spongebob themed Tic Tac Toe game. The game allows you to keep score while clearing the board after every game to continue competing against one another.
+  A simple coin flip guessing game web application that uses the fs and http modules. Using http to create the server and fs to read html file. 
+ Including vanilla ES6 js in a script tag at the bottom of the html file.
+
 </p>
 
 <section align="center">
