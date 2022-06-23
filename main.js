@@ -102,5 +102,4 @@ function to decide which image to display */
 // function to check the result and display if the user guessed correctly or not (if else statement)*/
 
 
-//integrate point count? 
-
+//integrate point count?
