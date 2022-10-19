@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heads or Tails</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Heads or Tails? </h1>
+            <p>Lets play a simple game of heads or tails! Click a button to bet your side.</p>
+        </header>
+            <button class="bet" id="tail">tails</button>
+            <button class="bet" id="head">heads</button>
+            <p class="answer"></p>
+    </section>
+<script type="text/javascript">
+    let buttons = document.querySelectorAll('.bet')
+    buttons.forEach((button)=>{
+        button.addEventListener('click' , function(){
+            console.log(button.innerText)
+            let bet = button.innerText
+
+            fetch(`/api?bet=${bet}`)
+            .then(response => response.json())
+            
+            .then((data)=>{
+                console.log(data)
+                document.querySelector('.answer').innerText=data.result
+
+            })
+        })
+    })
+</script>
+</body>
+</html>
