@@ -1,22 +1,16 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Coin Flip
+Choose between heads or tails. If you choose correct you win, if not you lose.
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+**Link to project:** https://kerlinaugustin-coinflip.netlify.app/
 
-### How to submit your code for review:
+![coinflip](https://user-images.githubusercontent.com/102834611/168669492-af67aa2f-2ae3-43e8-9996-4ef6d03ec808.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Tech used:** HTML, CSS, JavaScript, Node.js
+
+I utilized an if statement to get heads or tails probabilities. 
+
+## Lessons Learned:
+
+Server.js is backend code that is happening in the background of the website.
