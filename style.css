@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+main:hover{
+    width: 50%;
+    height: 300px;
+    margin: 250px 25%;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 7px 7px black;
+    border-radius: 5px;
+    transition: 3s;
+}
+body{
+    background-image: url(img/cat.gif);
+    font-family: "Koulen", Arial, Helvetica, sans-serif;
+    color: aliceblue;display: flex;
+}
