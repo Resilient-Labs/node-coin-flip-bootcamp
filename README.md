@@ -1,22 +1,19 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Project: Node Coin Flip Game
 
 ### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+ ![gif](https://user-images.githubusercontent.com/91163017/197418489-9a7a0647-dd83-4913-aca6-367515e1b65e.gif)
+
+
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, Node.js
+
+On the server side I used the .random() method to generate a random number between 0 and 1. The server creates an object and sends it with two properties. If .random() generates a 0 it respondes to the request with a string of 'heads' alongside an image of a coin with the heads side showing. The same logic applies for tails.
+
+## Lessons Learned:
+
+When sending data to a web server, the data has to be a string. We can use JSON.stringify() to convert a JavaScript object to a JSON string.
