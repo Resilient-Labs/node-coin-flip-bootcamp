@@ -3,9 +3,9 @@
 ### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
 
 
-<!-- **Link to project:** https://nasafacilities.netlify.app/
+**Link to project:** https://coinflip-app.netlify.app/
 
- -->
+
  ![gif](https://user-images.githubusercontent.com/91163017/197418489-9a7a0647-dd83-4913-aca6-367515e1b65e.gif)
 
 
