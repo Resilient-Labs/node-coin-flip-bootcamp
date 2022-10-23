@@ -1,0 +1,87 @@
+/* @keyframes spin {
+    0% {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNqPy1HW-w6Zyj1fbBgu_clqzzVcy0ZxNPQ&usqp=CAU')
+    }
+
+    25% {
+        background: url("https://www.kindpng.com/picc/m/131-1318377_quarter-coin-penny-clip-art-tails-on-a.png")
+    }
+
+    50% {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNqPy1HW-w6Zyj1fbBgu_clqzzVcy0ZxNPQ&usqp=CAU')
+    }
+
+    75% {
+        background: url("https://www.kindpng.com/picc/m/131-1318377_quarter-coin-penny-clip-art-tails-on-a.png")
+    }
+
+    100% {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNqPy1HW-w6Zyj1fbBgu_clqzzVcy0ZxNPQ&usqp=CAU')
+    }
+} */
+
+.coinimg {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNqPy1HW-w6Zyj1fbBgu_clqzzVcy0ZxNPQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 100%;
+    height: 365px;
+}
+
+.animate {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNqPy1HW-w6Zyj1fbBgu_clqzzVcy0ZxNPQ&usqp=CAU');
+    background-size: 50%;
+    width: 227px;
+    height: 337px;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+}
+
+.coinFlipGame {
+    width: 100%;
+    height: 872px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.headsOrTailsDiv {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.selected, .player, .comp {
+    display: inline;
+    margin: 25px;
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.playerSelected{
+    color: blue;
+}
+.compSelected{
+    color: red;
+}
+
+body { 
+    background-image: url("imgs/flagback.jpeg");
+    background-repeat: none;
+    background-size: 126%;
+    font-family: 'Neucha', cursive;
+    color: white;
+
+}
