@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  background: rgb(219,232,253);
+  color: rgb(33,79,95);
+}
+
+main{
+  margin:0  auto;
+  width: 60%;
+}
+
+#coin{
+  background: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 1%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#sidea {
+background: black;
+}
+
+#sideb {
+background: pink;
+}
+
+
+
+
+
+
+
