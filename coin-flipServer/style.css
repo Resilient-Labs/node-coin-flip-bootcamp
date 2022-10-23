@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #1f4037,#99f2c8);
+}
+
+main {
+    width: 50%;
+    margin: 10% 25%;
+    text-align:center;
+    background: rgb(255, 255, 255, .98);
+}
+
+section{
+    display: flex;
+}
+
+#headsCoin, #tailsCoin{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    margin-left: 8%;
+    margin-top: 30%;
+}
+
+h2{
+    margin-top: 10%;
+}
