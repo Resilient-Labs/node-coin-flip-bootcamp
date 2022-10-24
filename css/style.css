@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(220, 189, 139);
+}
+#counter{
+    border: 2px solid black;
+    margin-right: 2%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+h1{
+    margin-bottom:0px;
+    color: rgba(67, 7, 7, 0.882);
+}
+h2{
+    text-align:center;
+}
+
+#bets {
+    display:flex;
+    padding:5%;
+    justify-content: center;
+    align-content:center;
+}
+#bets a {
+    width:30%;
+    padding-top:22%;
+    padding-bottom:5%;
+    text-align:center; 
+    color: #176832;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+    
+}
+#heads {
+    background-image: url(../assets/coin-heads.png);
+    background-size: cover;
+    background-position: center;
+    margin-right:3%
+}
+
+#tails {
+    background-image: url(../assets/coin-tails.png);
+    background-size: cover;
+    background-position:center;
+}
+
+#controls {
+    display:flex;
+    justify-content:center;
+
+}
+
+.hide {
+    display:none;
+}
+
+#reset {
+    background: rgba(67, 7, 7, 0.882);
+    color: rgb(220, 189, 139);
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:3%;
+    padding-right:3%;
+}
+
+#counter {
+    background: rgba(67, 7, 7, 0.882);
+    color: rgb(220, 189, 139);
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:3%;
+    padding-right:3%;
+}
