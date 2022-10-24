@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    background-color: beige;
+}
+div{
+    border: 2px solid black;
+    height: 200px;
+    width: 10%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
