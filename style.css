@@ -1,0 +1,83 @@
+body{
+  height: 100%;
+  background-image: url(https://nationaltoday.com/wp-content/uploads/2021/06/Flip-A-Coin-Day-640x514.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin:auto;
+  margin-left: 200px;
+}
+
+
+h1{
+font-style: italic;
+margin-left:50px;
+}
+
+
+.top{
+border: black solid 2px;
+width: 360px;
+/* margin: 108px; */
+ margin-top: 250px;
+ margin-bottom: 50px;
+margin-left: 420px;
+margin-top: 20px;
+transform: scale(1.2);
+color: white;
+/* height:400px;  */
+}
+
+.coin{
+  height:365px; 
+}
+
+.bottom{
+  margin-top:80px; 
+  margin-left:480px;
+  width: 360px;
+  height:400px;
+  color: black;
+}
+
+.heads{
+background-image: url(imgs/Heads.png);
+background-repeat: none;
+border: black solid 2px;
+width: 100%;
+/* height: 40%;  */
+
+}
+select{
+  transform: scale(1.5);
+  margin-left: 15px;
+
+}
+.tails{
+background-image: url(imgs/Tails.png);
+background-repeat: none;
+border: black solid 2px;
+width: 100%;
+/* height: 40%;  */
+/* display:none; */
+} 
+
+
+.result{
+  border: black solid 2px;
+  color: rgb(21, 22, 21);
+  background-color:yellow;
+  
+  /* margin-left:10px; */
+  /* height: 100px; */
+}
+
+button{
+transform: scale(2.0);
+margin:22px;
+}
+
+.player{
+  margin:20px;
+  border: black solid 2px;
+
+}
