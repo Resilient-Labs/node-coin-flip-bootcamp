@@ -20,3 +20,8 @@ I completed the challenge: 5
 I feel good about my code: 4
 I'm not sure if my constructors are setup cleanly...
 ```
+    <img src = "https://img.freepik.com/premium-vector/bitcoin-money-isolated-transparent-background-golden-bitcoin-coin-blockchain-technology-crypto-currency-realistic-illustration_365941-33.jpg?w=2000" alt="bitcoin">
+
+
+To run the node 
+Node server.js
