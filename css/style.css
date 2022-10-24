@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+}
+
+.results {
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.coinName {
+  margin-left: 3%;
+}
+
+.coinResult {
+  margin-left: 7%;
+}
+
+
