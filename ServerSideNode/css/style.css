@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Courgette', Arial, Helvetica, sans-serif;
+}
+
+
+
+h1{
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
+
+body {
+  background-image: linear-gradient( 115.7deg,  rgba(132,222,255,1) 7.6%, rgba(8,30,64,1) 99.8% );
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 1200px;
+ 
+}
+
+.top-area {
+  text-align: center;
+}
+
+
+
+.form-area {
+  /* background-color: white; */
+  width: 55%;
+  height: 7%;
+  display: flex;
+  margin: auto;
+}
+
+form {
+  padding-left: 35%;
+  font-size: 3rem;
+}
+
+#userName {
+  width: 60%;
+  height: 50%;
+
+
+}
+#clickMe {
+  width: 30%;
+  height: 50%;
+  
+  
+}
+
+.generate-area {
+  width: 55%;
+  height: 30%;
+  color: white;
+  border: 1px solid white;
+
+  margin: auto;
+  text-align: center;
+
+}
+
+.generate-area  h2 {
+
+  color: white;
+  /* text-decoration: underline; */
+  width: 100%;
+  font-size: 3rem;
+}
