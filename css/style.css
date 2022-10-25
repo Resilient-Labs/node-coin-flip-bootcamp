@@ -1,13 +1,41 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(244, 244, 244)
 }
-h1{
+
+section {
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  margin-top: 75px;
+  height: 370px;
+}
+
+h1 {
   color: black;
+  text-align: center;
 
 }
-img{
+
+img {
   width: 200px;
   height: 200px;
+  margin: 0 auto;
+  display: block;
+
 }
 
+#headsBtn {
+  margin-left: 204px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
