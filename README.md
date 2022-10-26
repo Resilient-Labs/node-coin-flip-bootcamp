@@ -2,13 +2,12 @@
 
 ### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file.
 
-[Link to project](wu-tang-name-morgan.netlify.app)
 
-![wu-tang-name-morgan netlify app_](https://user-images.githubusercontent.com/111996055/197927600-494115b6-026f-4ab1-a795-766085dd74ca.png)
+![morgan-coin-flip-game netlify app_](https://user-images.githubusercontent.com/111996055/197928806-88caf9c5-7dcf-4975-b89b-86b437a1faa9.png)
 
 ## How It's Made:
 HTML, CSS, JavaScript
 
 
 ## Lessons Learned:
-This project was a great exercise in using JavaScript to shuffle an array 
+This was my first time using node
