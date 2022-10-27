@@ -1,27 +1,17 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Node Coin Flip Game (Server Side)
 
 ### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
 
-### How to submit your code for review:
-
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
-
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
-    <img src = "https://img.freepik.com/premium-vector/bitcoin-money-isolated-transparent-background-golden-bitcoin-coin-blockchain-technology-crypto-currency-realistic-illustration_365941-33.jpg?w=2000" alt="bitcoin">
 
 
+
+![Screenshot 2022-10-27 100615](https://user-images.githubusercontent.com/113325142/198316553-eb2533b7-b13e-4cf9-9470-026c815d213f.jpg)
+
+
+This coin-flipping game was built using HTML, CSS, and JavaScript. It is run on the server-side and includes a counter which tells you how many times the coin is heads or tails.
+
+
+
+Additional directions:
 To run the node 
 Node server.js
