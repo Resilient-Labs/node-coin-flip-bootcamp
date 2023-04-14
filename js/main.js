@@ -5,7 +5,7 @@ document.querySelector('button').addEventListener('click', flippingIt);
 function flippingIt() {
   const coinSelector = document.querySelector('#userName').value;
   // Fetch
-  fetch(`/api?coin=${coinSelector}`)
+  fetch(`/api?coins=${coinSelector}`)
     .then(res => res.json())
     .then((data) => {
       console.log(data);
