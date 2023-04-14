@@ -1,0 +1,30 @@
+h1{
+  color: rgb(213, 181, 90);
+  font-size: 3rem;
+  text-shadow: 4px 4px black;
+}
+
+body{
+  text-align: center;
+  background-color: rgb(226, 221, 214);
+  
+}
+html{
+  font-family: "Asset", sans-serif;
+  color: rgb(213, 181, 90);
+  text-shadow: 1px 1px black;
+}
+button{
+  background-color: black;
+  color: rgb(213, 181, 90);
+  width: 10%;
+  height: 20px;
+  font-family: "Asset", sans-serif;
+  font-size: .8rem;
+  border-radius: 5px;
+}
+
+h3{
+  color: black;
+  text-shadow: 1px 1px rgb(213, 181, 90);
+}
