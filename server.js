@@ -14,7 +14,48 @@ const server = http.createServer(function(req, res) {
       res.write(data);
       res.end();
     });
-  }else if (page == '/css/style.css'){
+  }else if (page == '/api') {
+    coinArray = ['heads', 'tails']
+    if('coins' in params){
+      
+      if(params['coins']== 'heads'){
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        random = coinArray[Math.floor(Math.random() * coinArray.length)]
+        userChoice = params['coins']
+        if(userChoice == random){
+          statusMessage = 'Winner'
+        }else{
+          statusMessage = 'You Loose'
+        } 
+        console.log(userChoice, random, statusMessage)
+
+        const objToJson = {
+          playerChoice: `${userChoice}`,
+          cpuChoice: `${random}`,
+          winOrLoose: `${statusMessage}`
+        }
+        res.end(JSON.stringify(objToJson));
+      }//coin = heads
+      else if(params['coins']== 'tails'){
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        random = coinArray[Math.floor(Math.random() * coinArray.length)]
+        userChoice = params['coins']
+        if(userChoice == random){
+          statusMessage = 'Winner'
+        }else{
+          statusMessage = 'You Loose'
+        }
+        console.log(userChoice, random, statusMessage)
+        const objToJson = {
+          playerChoice: `${userChoice}`,
+          cpuChoice: `${random}`,
+          winOrLoose: `${statusMessage}`
+        }
+        res.end(JSON.stringify(objToJson));
+      }// coin = tails
+    }// coin if
+  }//else if
+  else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
       res.write(data);
       res.end();
