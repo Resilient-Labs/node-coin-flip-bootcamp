@@ -19,13 +19,41 @@ const server = http.createServer(function(req, res) {
     fs.readFile('css/style.css', function(err, data) {
       res.write(data);
       res.end();
-    });
+    })
   }else if (page == '/js/main.js'){
     fs.readFile('js/main.js', function(err, data) {
-      res.writeHead(200, {'Content-Type': 'text/javascript'});
-      res.write(data);
-      res.end();
-    });
+      res.writeHead(200, {'Content-Type': 'text/javascript'})
+      res.write(data)
+      res.end()
+    })
+  }else if (page == '/api'){
+    if ('coinSide' in params ){
+    let randomNumber = Math.random()
+    let coin
+    if(randomNumber <= 0.5){
+        coin = 'heads'
+        console.log(randomNumber)
+    }
+    else if(randomNumber > 0.5){
+        coin = 'tails'
+        console.log(randomNumber)
+    }
+
+    let whoWon
+    if(params['coinSide'] == 'heads' && coin == 'heads' || params['coinSide'] == 'tails' && coin == 'tails'){
+      whoWon = "YOU WIN"
+
+    
+    }
+    else{
+      whoWon = "You lose"
+    }
+    const objToJson = {
+      status: whoWon,
+      coinPick: coin
+    }
+    res.end(JSON.stringify(objToJson))
+    
   }else{
     figlet('404!!', function(err, data) {
       if (err) {
@@ -37,6 +65,7 @@ const server = http.createServer(function(req, res) {
       res.end();
     });
   }
+}
 });
 
 server.listen(8000);

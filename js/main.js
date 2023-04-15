@@ -1,48 +1,28 @@
-function coinflip(){
-  let randomNumber = Math.random()
-  if (randomNumber < .5){
-    coin = 'heads'
-  }else {
-    coin = 'tails'
-  }
+let headsButton = document.querySelector('#heads')
+let tailsButton = document.querySelector('#tails')
 
-  console.log(coin)
-  return coin
+let coinPick = document.querySelector('#coinPick')
+let userPick = document.querySelector('#userPick')
+
+headsButton.addEventListener('click', function() {coinflip('heads')})
+tailsButton.addEventListener('click', function() {coinflip('tails')})
+
+
+
+function coinflip(pick){
+  fetch('/api?coinSide=${pick}')
+  .then (res => res.json())
+  .then (data => {
+    console.log(data)
+    document.querySelector('#status').innerText = data.status
+    coinPick.innerText = data.status
+  })
+ 
+  .catch(err => {
+  console.log(`error ${err}`)
+ })
  
 }
-
-
-function checkWhoWon(coin, player1turn){
-  let status = document.querySelector("#status")
-
-  if (player1turn !== coin){
-    status.innerText = "You lost"
-  }
-	else{
-		status.innerText = "YOU WIN"
-	}
-}
-
-function playerpicksHeads(){
-  let player1turn = 'heads'
-  let coin = coinflip()
-  checkWhoWon(coin, player1turn)
-  
-}
-
-document.querySelector('#heads').addEventListener('click', playerpicksHeads)
-
-
-function playerpicksTails(){
-  let player1turn = 'tails'
-  let coin = coinflip()
-  checkWhoWon(coin, player1turn)
-
-  
-}
-
-document.querySelector('#tails').addEventListener('click', playerpicksTails)
-
 
 
 
