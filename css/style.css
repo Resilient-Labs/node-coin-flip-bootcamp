@@ -1,0 +1,21 @@
+h1{
+  color: red;
+  font-size: 50px;
+}
+body{
+  background-image: url('https://images.greysheet.com/l/blogs/20210820/6dfc3724-ccc3-4e1a-bf31-1a7868795239.jpg');
+}
+
+
+p{
+  font-size: 20px;
+  color:rgb(240, 226, 78);
+  text-shadow: 2px 2px black;
+}
+
+h2{
+  font-size: 20px;
+  color:rgb(121, 153, 228);
+  text-shadow: 2px 2px rgb(60, 60, 181);
+
+}
