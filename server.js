@@ -40,6 +40,7 @@ const server = http.createServer(function(req, res) {
     }
 
     let whoWon
+    const params = querystring.parse(url.parse(req.url).query)
     if(params['coinSide'] == 'heads' && coin == 'heads' || params['coinSide'] == 'tails' && coin == 'tails'){
       whoWon = "YOU WIN"
 
@@ -50,7 +51,8 @@ const server = http.createServer(function(req, res) {
     }
     const objToJson = {
       status: whoWon,
-      coinPick: coin
+      coinPick: coin,
+      userPick: params['coinSide'] 
     }
     res.end(JSON.stringify(objToJson))
     

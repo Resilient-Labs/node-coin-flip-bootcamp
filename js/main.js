@@ -4,13 +4,13 @@ let tailsButton = document.querySelector('#tails')
 let coinPick = document.querySelector('#coinPick')
 let userPick = document.querySelector('#userPick')
 
-headsButton.addEventListener('click', function() {coinflip('heads')})
-tailsButton.addEventListener('click', function() {coinflip('tails')})
+headsButton.addEventListener('click', function(){coinflip('heads')})
+tailsButton.addEventListener('click', function(){coinflip('tails')})
 
 
 
 function coinflip(pick){
-  fetch('/api?coinSide=${pick}')
+  fetch(`/api?coinSide=${pick}`)
   .then (res => res.json())
   .then (data => {
     console.log(data)
