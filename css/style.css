@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+}
+:root{
+  font-size: 62.5%;
+}
+.container{
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin: 15%;
+}
+h1{
+  font-size: 5rem;
+}
+label{
+  font-size: 3rem;
+}
+button {
+  padding: 6px 16px;
+  border-radius: 10px;
+  background-color: rgb(152 114 222);
+  color: rgb(24, 22, 22);
+  border:none;
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
+  margin: 3%;
+  display: flex;
+
+}
