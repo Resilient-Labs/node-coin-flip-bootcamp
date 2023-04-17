@@ -1,0 +1,36 @@
+/* referenced chat gpt for some styling help */
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 20px 50px 20px;
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    display: inline;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+div p {
+    font-size: 3rem;
+}
