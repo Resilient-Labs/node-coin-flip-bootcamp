@@ -1,3 +1,53 @@
+*{
+  box-sizing: border-box;
+  font-family: 'DynaPuff', Arial, Helvetica, sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
 h1{
-  color: red;
+  font-size: 8rem;
+  margin-top:none;
+  color:rgb(30, 226, 226);
+  text-shadow: 2px 3px 1px rgb(26, 85, 163);
+}
+
+span{
+  display: block;
+  font-size: 3rem;
+  color:rgb(30, 226, 226);
+  font-weight: 800;
+  text-shadow: 2px 2px 1px rgb(26, 85, 163);
+}
+
+body{
+  background: linear-gradient(rgb(255, 255, 189), gold);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  padding: 30px;
+}
+
+input{
+  font-size: 2rem;
+  width: 20%;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border:none;
+  box-shadow: 2px 3px 1px 3px rgb(169, 198, 214);
+}
+
+button{
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  background:rgb(70, 178, 250);
+  border: none;
+  box-shadow: 2px 3px 1px 3px rgb(37, 150, 216);
+}
+
+h2{
+  margin: 80px 20px;
+  font-size: 2rem;
 }

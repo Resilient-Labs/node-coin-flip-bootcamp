@@ -26,7 +26,7 @@ const server = http.createServer(function(req, res) {
       if(input == random){
         results = "You won!"
       } else{
-        results = "You lost"
+        results = "You lost!"
       }
         const objToJson = {
           side: `${results}`,
