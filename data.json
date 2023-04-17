@@ -1,0 +1,11 @@
+{
+  name: "leon",
+  status: "Boss Man",
+  currentOccupation: "Baller"
+}
+
+{
+  name: "Rex",
+  status: "Hector",
+  currentOccupation: ""
+}
