@@ -1,0 +1,15 @@
+html{
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1{
+  color: pink;
+}
+#clickMe{
+  font-family: 'Monserrat';
+  background-color: pink;
+  color: white;
+  padding: 5px;
+  border: none;
+}
