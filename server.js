@@ -23,15 +23,15 @@ const server = http.createServer(function(req, res) {
         random = coinArray[Math.floor(Math.random() * coinArray.length)]
         userChoice = params['coins']
         if(userChoice == random){
-          statusMessage = 'Winner'
+          statusMessage = 'Youza Winner'
         }else{
-          statusMessage = 'You Loose'
+          statusMessage = 'Youza Looser'
         } 
         console.log(userChoice, random, statusMessage)
 
         const objToJson = {
-          playerChoice: `${userChoice}`,
-          cpuChoice: `${random}`,
+          playerChoice: `You Chose: ${userChoice}`,
+          cpuChoice: `Coin Flipped: ${random}`,
           winOrLoose: `${statusMessage}`
         }
         res.end(JSON.stringify(objToJson));
@@ -41,14 +41,14 @@ const server = http.createServer(function(req, res) {
         random = coinArray[Math.floor(Math.random() * coinArray.length)]
         userChoice = params['coins']
         if(userChoice == random){
-          statusMessage = 'Winner'
+          statusMessage = 'Youza Winner'
         }else{
-          statusMessage = 'You Loose'
+          statusMessage = 'Youza Looser'
         }
         console.log(userChoice, random, statusMessage)
         const objToJson = {
-          playerChoice: `${userChoice}`,
-          cpuChoice: `${random}`,
+          playerChoice: `You Chose: ${userChoice}`,
+          cpuChoice: `Coin Flipped: ${random}`,
           winOrLoose: `${statusMessage}`
         }
         res.end(JSON.stringify(objToJson));

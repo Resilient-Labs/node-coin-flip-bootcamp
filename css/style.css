@@ -1,3 +1,7 @@
+*{
+  color: black;
+}
 h1{
-  color: red;
+  border-bottom: .5px black solid;
+  width: 25%;
 }
