@@ -25,9 +25,14 @@ const server = http.createServer(function(req, res) {
           res.write(data);
           res.end();
         });
+      }else if (page == '/api'){
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        const objToJson = {
+          outcomes: ['heads','tails']
+        }
+        res.end(JSON.stringify(objToJson))
       }else{
         console.log('Something went wrong...');
       }
-
 })
 server.listen(PORT);
