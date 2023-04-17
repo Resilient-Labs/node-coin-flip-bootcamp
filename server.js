@@ -38,34 +38,36 @@ const server = http.createServer(function(req, res) {
   }else if (page == '/api') {
     array1 = ['heads', 'tails']
     if('coins' in params){
-      if(params['coins'] === 'heads'){
+      if(params['coins'] == 'heads'){
         res.writeHead(200, {'Content-Type': 'application/json'});
-        randomFlip = array1[Math.floor(Math.random()*array1.length)]
-        if(params['coins'] === randomFlip){
+        randomFlip = array1[Math.floor(Math.random() * array1.length)]
+        if(params['coins'] == randomFlip){
           winnerLoser = 'Winner'
         }else{
           winnerLoser = 'Loser'
         }
         const objToJson = {
           humanChoice: "heads",
-          winnerMessage: `Winner is: ${randomFlip}`,
+          winnerMessage: `${randomFlip}`,
           flippingResult: `You are a ${winnerLoser}`
         }
         res.end(JSON.stringify(objToJson));
       }//coins = leon
-    }else if(params ['coins'] === 'tails'){
+    }else if(params ['coins'] == 'tails'){
       res.writeHead(200, {'Content-Type': 'application/json'})
-      randomFlip = array1[Math.floor(Math.random()*array1.length)]
-      if(params['coins'] === randomFlip){
+      randomFlip = array1[Math.floor(Math.random() * array1.length)]
+      if(params['coins'] == randomFlip){
         winnerLoser = 'Winner'
       }else{
         winnerLoser = 'Loser'
       }
-      // const objToJson = {
-      //   humanChoise: "tails",
-      //   winnerMessage: `Winner is: ${flipTheCoin}`,
-      //   flippingResult: `You are a ${winnerLoser}`
-      // }
+      const objToJson = {
+        humanChoice: "tails",
+        winnerMessage: `Winner is: ${flipTheCoin}`,
+        flippingResult: `You are a ${winnerLoser}`
+      }
+      res.end(JSON.stringify(objToJson));
+
     }
     //   else if(params['student'] != 'leon'){
     //     res.writeHead(200, {'Content-Type': 'application/json'});
@@ -74,7 +76,7 @@ const server = http.createServer(function(req, res) {
     //       status: "unknown",
     //       currentOccupation: "unknown"
     //     }
-    //     res.end(JSON.stringify(objToJson));
+        // res.end(JSON.stringify(objToJson));
     //   }//student != leon
     
   }//else if

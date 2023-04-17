@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', flippingIt);
 
 // Function to handle button click event
 function flippingIt() {
-  const coinSelector = document.querySelector('#userName').value;
+  const coinSelector = document.querySelector('#coinSelec').value;
   // Fetch
   fetch(`/api?coins=${coinSelector}`)
     .then(res => res.json())
