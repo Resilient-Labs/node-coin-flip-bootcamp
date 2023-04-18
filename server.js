@@ -52,22 +52,22 @@ const server = http.createServer(function(req, res) {
           flippingResult: `You are a ${winnerLoser}`
         }
         res.end(JSON.stringify(objToJson));
+      }else if(params ['coins'] == 'tails'){
+        res.writeHead(200, {'Content-Type': 'application/json'})
+        randomFlip = array1[Math.floor(Math.random() * array1.length)]
+        if(params['coins'] == randomFlip){
+          winnerLoser = 'Winner'
+        }else{
+          winnerLoser = 'Loser'
+        }
+        const objToJson = {
+          humanChoice: "tails",
+          winnerMessage: `Winner is: ${randomFlip}`,
+          flippingResult: `You are a ${winnerLoser}`
+        }
+        res.end(JSON.stringify(objToJson));
+  
       }//coins = leon
-    }else if(params ['coins'] == 'tails'){
-      res.writeHead(200, {'Content-Type': 'application/json'})
-      randomFlip = array1[Math.floor(Math.random() * array1.length)]
-      if(params['coins'] == randomFlip){
-        winnerLoser = 'Winner'
-      }else{
-        winnerLoser = 'Loser'
-      }
-      const objToJson = {
-        humanChoice: "tails",
-        winnerMessage: `Winner is: ${flipTheCoin}`,
-        flippingResult: `You are a ${winnerLoser}`
-      }
-      res.end(JSON.stringify(objToJson));
-
     }
     //   else if(params['student'] != 'leon'){
     //     res.writeHead(200, {'Content-Type': 'application/json'});
