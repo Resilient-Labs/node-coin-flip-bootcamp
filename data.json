@@ -1,0 +1,3 @@
+{
+  winOrLoss : document.querySelector("#"personStatus"")
+}

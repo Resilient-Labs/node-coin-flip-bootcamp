@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+}
+
+body {
+  /* background: url('../css/pics/ladyofjustice.jpeg'); */
+  background: linear-gradient(to bottom, #fff8dc, #ffd700, #eec900, #cdad00, #8b7500, #6b5c00, #4d3f00);
+  background-repeat: no-repeat;
+  height: 820px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+input {
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+#winorloss {
+  color: red;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#coinflip {
+  font-size: 1.5rem;
+  color: darkcyan;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
