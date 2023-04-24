@@ -38,3 +38,7 @@ button{
   height: 30px;
   background: yellowgreen;
 }
+
+#coinPick, #userPick{
+  font-size: 1rem;
+}

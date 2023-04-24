@@ -15,7 +15,8 @@ function coinflip(pick){
   .then (data => {
     console.log(data)
     document.querySelector('#status').innerText = data.status
-    coinPick.innerText = data.status
+    coinPick.innerText = `Coin pick: ${data.coinPick}`
+    userPick.innerText = `Your pick: ${data.userPick}`
   })
  
   .catch(err => {
