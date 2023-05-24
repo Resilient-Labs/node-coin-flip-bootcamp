@@ -52,12 +52,12 @@ const server = http.createServer(function(req, res) {
   res.end(JSON.stringify(object));
    
   } else if (page == '/coin.css'){
-    fs.readFile('/coin.css', function(err, data) {
+    fs.readFile('coin.css', function(err, data) {
       res.write(data);
       res.end();
     });
   }else if (page == '/main.js'){
-    fs.readFile('/main.js', function(err, data) {
+    fs.readFile('main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
       res.end();

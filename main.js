@@ -1,9 +1,8 @@
-document.getElementById("heads").onclick = makeReq;
-document.getElementById("tails").onclick = makeReq;
+document.getElementById("heads").onclick = function(){makeReq('heads')};
+document.getElementById("tails").onclick = function(){makeReq('tails')};
 
-function makeReq(e){
-  let userChoice = e.target.value
-
+function makeReq(userChoice){
+  
   fetch('/api')
     .then((response) => response.json())
     .then((data) => {
@@ -15,5 +14,4 @@ function makeReq(e){
       result.innerHTML = `You guessed wrong!`
     }
   })
-  
 }
