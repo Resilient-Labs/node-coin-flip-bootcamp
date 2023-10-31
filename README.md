@@ -1,22 +1,25 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+<img width="898" alt="coin-flip" src="https://github.com/JacinthaDev/Coin-Flip/assets/129231721/090d2d76-4c2f-40f2-8b60-9b9f73622b34">
 
-### How to submit your code for review:
+https://jacinthadev.github.io/Coin-Flip/
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# About this project
+This project uses backend to create a coin flip game
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+## How It's Made:
+Tech used: HTML, CSS, JavaScript, Node.js
+
+
+## Lessons Learned:
+In this project I learned how to connect backend and frontend.  
+
+### Examples:
+Take a look at similar projects!
+
+Palindrome Checker: https://github.com/JacinthaDev/Palindrome/tree/answer
+
+Tic-Tac-Toe: https://github.com/JacinthaDev/Tic-Tac-Toe/tree/answer
+
+Avatar The Last Airbender Slot Machine: https://github.com/JacinthaDev/Slot-Machine/tree/answer
