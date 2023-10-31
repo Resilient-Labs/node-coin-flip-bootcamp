@@ -1,22 +1,16 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+<img width="1126" alt="Screenshot 2023-10-30 at 9 56 02 PM" src="https://github.com/codedbycass/Coin-Flip/assets/122684139/897b0c36-6253-4dd3-9ec2-5fe86840275e">
 
-### How to submit your code for review:
+The user will guess heads or tails and enter it in the input box.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How it's made
+JS, Node.js
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+JS: The client side calls the API in the local server using the Fetch API. The result "winner" or "loser" will print to the DOM if the user's guess matches the logic (whether heads or tails was generated) on the server side end.
+
+Node.js: Node.js was used to import several Node.js modules: http, fs, url, and queryStrings (from the user). Then I defined the server, extract the requested page's pathname, and parses query parameters. Following are conditionals that determines where a user is in the program. When the client accesses the '/api', the server generates a random outcome of heads or tails and checks if the user's choice matches the outcome. If there's a match, the client receives a response indicating a win along with additional information in a JSON format. 
+
+## Lessons Learned
+
+I learned how to make a basic API in the server side thereby separating the JS logic from the client side.
