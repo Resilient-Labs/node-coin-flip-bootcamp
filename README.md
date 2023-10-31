@@ -1,5 +1,7 @@
 # Node Coin Flip Game
 
+<img width="1126" alt="Screenshot 2023-10-30 at 9 56 02 PM" src="https://github.com/codedbycass/Coin-Flip/assets/122684139/897b0c36-6253-4dd3-9ec2-5fe86840275e">
+
 The user will guess heads or tails and enter it in the input box.
 
 ## How it's made
