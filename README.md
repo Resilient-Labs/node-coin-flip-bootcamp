@@ -1,4 +1,4 @@
-# 💸 Coin Flip Game
+# 💸 Server Side Coin Flip Game
 
 <img width="898" alt="coin-flip" src="https://github.com/JacinthaDev/Coin-Flip/assets/129231721/090d2d76-4c2f-40f2-8b60-9b9f73622b34">
 
