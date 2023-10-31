@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    background:url("btc.jpg") no-repeat;
+    background-size:cover;
+}
+
+h1, .coinResult, .status{
+    font-size:3rem;
+    color:rgb(255, 255, 255)
+}
+
+.status{
+    margin:0;
+}
+
+input, button{
+    font-size:1.5rem;
+}
+
+button{
+    background:transparent;
+    border:white 1px solid;
+    color:rgb(255, 253, 253);
+    padding-right:20px;
+    padding-left:20px;
+    box-shadow: 5px 5px 2px rgb(207, 205, 204);
+}
+
+button:active{
+    transform: translateY(4px);
+}
