@@ -5,7 +5,7 @@
 This simple web application is created on the backend server side. It is hosted locally. It allows for the user to guess their luck by clicking on a button and seeing if it is heads or tails.
 
 
-![alt tag](images/heads-tails-sc.png)
+![alt tag](images/heads-tails-scc.png)
 
 ## How It's Made:
 
