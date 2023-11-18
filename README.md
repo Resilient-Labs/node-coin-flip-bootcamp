@@ -1,22 +1,71 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Coin Flip Game 🪙
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+  ![Coin Flip Game Screenshot](project.png)
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Project Description
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+### Goal
+Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your HTML file. Include vanilla ES6 JS in a script tag at the bottom of your HTML file. Try creating a coin flip guessing game.
+
+
+## How It's Made
+
+### Tech used
+
+- HTML
+- CSS
+- Node.js
+- Vanilla JavaScript (ES6)
+
+### Implementation Details
+
+- **HTML and CSS:**
+  - Basic HTML structure and CSS styling for a user-friendly interface.
+
+- **Node.js:**
+  - Server creation using the http module, and reading HTML file using the fs module.
+
+- **Vanilla JS (ES6):**
+  - Backend logic for the coin flip guessing game.
+
+- **Figlet for Error Message:**
+  - Utilized Figlet for enhanced error messages.
+
+## Optimizations (Optional)
+
+No specific optimizations were made for this project.
+
+## Lessons Learned 📚
+
+This project marked my second venture, where I created a web application for a coin flip guessing game with backend logic.
+
+- **Server Creation:**
+  - Gained understanding and hands-on experience in creating and starting a server using Node.js.
+
+- **Backend Interaction:**
+  - Learned how to grab data from the user on the backend and display results in the DOM.
+
+- **Node Modules:**
+  - Knowledge gained about using Node modules for enhanced functionality and modularity.
+
+## Getting Started 🚀
+
+To get this project up and running, follow these simple steps:
+
+1. **Clone Repository:**
+   - Clone this repository using `git clone`.
+
+2. **Navigate to the Project:**
+   - `cd` into the project directory.
+
+3. **Install Dependencies:**
+   - Run `npm install` to install the necessary dependencies.
+
+4. **Start the Server:**
+   - Run `node server.js` to start the server.
+
+5. **Open in Browser:**
+   - Visit `http://localhost:8000` in your web browser.
+
+Enjoy flipping coins and guessing the outcome!
