@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    padding: 5%;
+    background: rgb(255, 243, 221);
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+#question {
+    display: block;
+    margin-bottom: -1rem;
+}
+
+input, input + label {
+    cursor: pointer;
+}
+
+/* The following is from
+https://stackoverflow.com/a/34854325 */
+
+input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffaa3a;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/* The following is modified from Button 87 on
+https://getcssscan.com/css-buttons-examples */
+
+button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, #ee4422 0%, #f0cc19 50%, #ee4422 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-position: right center;
+}
+
+button:active {
+    transform: scale(0.9);
+}
