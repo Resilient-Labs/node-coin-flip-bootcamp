@@ -1,0 +1,23 @@
+html {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: burlywood;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/headsortails.jpeg);
+
+}
+
+section {
+  text-align: center;
+}
+
+p{
+  color: saddlebrown;
+  font-style: italic;
+}
