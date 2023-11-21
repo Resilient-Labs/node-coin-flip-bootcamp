@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  background: rgb(202, 163, 101);
+  background-size: cover;
+  text-align: center;
+
+}
+
+section{
+  border: 2px solid black;
+  height: 400px;
+  font-size: 2rem;
+  width: 50%;
+  margin: 7% 0 0 25%;
+  background: white;
+}
+
+table{
+  margin: 0 0 0 41%;
+  font-size: 3rem;
+}
+
+#status{
+  font-size: 3rem;
+  color: yellowgreen;
+}
+
+button{
+  width: 8%;
+  height: 30px;
+  background: yellowgreen;
+}
+
+#coinPick, #userPick{
+  font-size: 1rem;
+}
