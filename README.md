@@ -2,6 +2,8 @@
 
 ![Coin Toss Site Gif](img/cointoss.gif)
 
+Link to Project: https://coin-toss-game-production.up.railway.app/
+
 Welcome to my Coin Toss Game project. This simple web application uses the `fs` (File System) and `http` modules in Node.js. The application creates an HTTP server and reads an HTML file that includes a vanilla ES6 JavaScript script. The game challenges you to guess the outcome of a coin flip.
 
 
