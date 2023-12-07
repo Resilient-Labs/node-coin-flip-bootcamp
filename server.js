@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs')
 const url = require('url');
+const port = process.env.PORT || 8000
 const querystring = require('querystring');
 const figlet = require('figlet')
 
@@ -104,4 +105,4 @@ const server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(8000);
+server.listen(port, '0.0.0.0');
