@@ -1,0 +1,138 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-image: url('https://res.cloudinary.com/joemomma/image/upload/v1615684857/board_jdvnxm.jpg');
+}
+html{
+  font-size: 10px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  font-size: 5rem;
+  color:white;
+}
+h4{
+  margin: 1rem 2rem;
+}
+button {
+  width: 72px;
+border-radius: 50%;
+height: 53px;
+outline: none;
+}
+button:active{
+  transform: translateY(4px);
+}
+.main {
+  text-align: center;
+  /* border: 1px solid black; */
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#coin{
+  position: relative;
+  transform-style: preserve-3d;
+}
+#coin div {
+  width: 100%;
+  height: 300px;
+  margin-top: 7rem;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  background-size: contain;
+  position: absolute;
+}
+.score{
+  color: aliceblue;
+    display: flex;
+    font-size: 3rem;
+}
+.heads {
+    background-image: url('https://res.cloudinary.com/joemomma/image/upload/v1615681898/front_gql5pp.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.animate-heads {
+  animation: flipHeads 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1800deg);
+  }
+}
+.tails {
+    background-image: url('https://res.cloudinary.com/joemomma/image/upload/v1615681907/back_ihzqhj.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  transform: rotateY(-180deg);
+}
+
+.animate-tails {
+  animation: flipTails 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes flipTails {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1620deg);
+  }
+}
