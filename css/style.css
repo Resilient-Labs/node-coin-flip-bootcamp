@@ -1,0 +1,40 @@
+body{
+  background-image: url('https://wallpaperaccess.com/full/2266882.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  font-family: 'Press Start 2P', cursive;
+  color: gold;
+  text-align: center;
+
+}
+#head{
+  height: 250px;
+  width: 180px;
+
+
+}
+#tails{
+  height: 240px;
+  margin-top: 100px;
+
+
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+h3{
+  font-size: 35px;
+  text-align: center;
+}
+
+#answer{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.buttons{
+  letter-spacing: 100px;
+}
