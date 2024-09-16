@@ -1,0 +1,22 @@
+body{
+  background-image: url(https://miro.medium.com/max/2560/1*Rnx_Trw6P-Lpfre_1K4FWQ.jpeg);
+  background-size: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+img {
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+}
+button:first-of-type{
+  margin-left: 45%;
+}
+p {
+  color: white;
+  text-align: center;
+}
