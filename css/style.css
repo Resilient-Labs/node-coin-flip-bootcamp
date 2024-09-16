@@ -1,0 +1,117 @@
+ h1 {
+  color: red;
+  top: 20px;
+}
+
+/* 
+#flipChoice, #results {
+  color: black; 
+  text-align: center;
+  position: absolute;
+  top: 90px;
+}
+
+input {
+position: absolute; 
+top: 80%;
+}
+
+button {
+  position: absolute; 
+  top: 90%;
+}
+
+#clickMe::before {
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1, 0.1);
+}
+
+#clickMe:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+#clickMe::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#clickMe:hover::after {
+  transform: scale(1, .1);
+  opacity: 0;
+} */
+
+
+/* got the css from codepen  */
+/* 
+body {
+  align-items: center;
+  background-image: linear-gradient(#09f, #fff calc(50vh + 15vmin), #900);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+.disk {
+  animation: spin 2s infinite linear;
+  background-color: #fc0;
+  border-left: solid 0 #eb0;
+  border-radius: 50%;
+  border-right: solid 0 #eb0;
+  height: 50vmin;
+  position: absolute;
+  width: 50vmin;
+}
+
+.disk:before {
+  border: dotted 1vmin #eb0;
+  border-radius: 50%;
+  bottom: 2vmin;
+  content: "";
+  left: 2vmin;
+  position: absolute;
+  right: 2vmin;
+  top: 2vmin;
+}
+
+
+.disk:after {
+  background-image: radial-gradient(#000, transparent);
+  border-radius: 50%;
+  bottom: -1vmin;
+  content: "";
+  left: 5vmin;
+  opacity: .25;
+  position: absolute;
+  right: 5vmin;
+  top: 49vmin;
+  z-index: -1;
+}
+
+
+@keyframes spin {
+  0% {
+    border-left-width: 0;
+    border-right-width: 0;
+    width: 50vmin;
+  }
+
+  50% {
+    border-left-width: 5vmin;
+    border-right-width: 0;
+    width: 0;
+  }
+
+  50.001% {
+    border-left-width: 0;
+    border-right-width: 5vmin;
+  }
+
+  100% {
+    border-left-width: 0;
+    border-right-width: 0;
+    width: 50vmin;
+  }
+} */ 
