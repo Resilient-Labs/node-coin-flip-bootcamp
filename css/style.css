@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(255, 191, 191);
+  background: radial-gradient(circle, rgba(255, 191, 191, 1) 8%, rgba(111, 108, 136, 1) 94%);
+  height: 100vh;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+input,
+button {
+  font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+  width: 15%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
