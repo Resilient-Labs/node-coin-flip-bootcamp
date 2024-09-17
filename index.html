@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<title>Coin Toss</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Coin Toss</h1>
+
+		<form action="">
+			<label id="money" for="">Do you feel lucky, punk? Do ya?</label>
+			<select name="Coin options" id="coins">
+				<option value="0">Choose a side</option>
+				<option value="heads">Heads</option>
+				<option value="tails">Tails</option>
+			</select>
+			<!-- <input type="submit"> -->
+			<button><span class="button_top">Submit</span> </button>
+		</form>
+
+		
+		<h2>The flip: <span id="tossMessage"></span></h2>
+		
+		<section class="hidden images"  id="heads">
+			<img src="img/squidward_head.png" alt="">
+		</section>
+		<section class="hidden images" id="tails">
+			<img src="img/patrick_butt.png" alt="">
+		</section>
+		
+		<p id="gameMessage"></p>
+		
+		<h2><span id="winMessage"></span></h2>
+
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
