@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  background-color: lightblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+section {
+  border-radius: 12px;
+  width: 39%;
+  background-color: white;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  background-color: white;
+  font-weight:700;
+  letter-spacing: -0.08rem;
+  font-size: 3rem;
+  color: lightsteelblue;
+  text-shadow: 4px 3px 0 #7A7A7A;
+  margin-left: 21%;
+  margin-bottom: 20px;
+  padding-top: 6%;
+}
+
+p {
+  background-color: white;
+  letter-spacing: -2.95px;
+  font-weight: 500;
+  margin-left: 20%;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+img {
+  margin-left: 30%;
+  margin-bottom: 8%;
+}
+form {
+  border:1px solid grey;
+  padding-top: 2%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+input {
+  background-color: white;
+}
+
+span {
+  background-color: white;
+  margin-left: 7%;
+}
+.hello {
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: white;
+}
