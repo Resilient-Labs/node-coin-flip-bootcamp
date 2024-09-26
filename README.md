@@ -1,22 +1,16 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸Project: Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+### This project is coin flip guessing web application that allows the user to click the Heads or Tails button. If the user correctly guesses Heads or Tails then winner will display in the DOM.
+### Link to project:https://sleepy-swirles-4e2e9d.netlify.app/
 
-### How to submit your code for review:
+<img width="1440" alt="CoinFlipIMG" src="https://user-images.githubusercontent.com/88958905/137140726-c938b4ad-1580-4845-a778-6de8385f112a.png">
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+### How it's Made:
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+Tech used: HTML, CSS, JavaScript
+
+To create this appliction it required a few more steps then what I became accustomed too. After building the HTML, I created two seperate JS Files so that the appilcation could be ran on the server side. In one file I created one function that allows the user to click on the heads or tails button and also cointains two API's which allows the winner or loser to be dispayed in the DOM. The next file consist of the logic behind the randomization of the computer generating Heads or Tails.
+
+
+### What I learnerd:
+This lesson has taught me how to properly use Node.JS to and display my projects on the server side.
