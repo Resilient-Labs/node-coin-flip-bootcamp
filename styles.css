@@ -1,0 +1,9 @@
+body{
+ background: linear-gradient(#123456, #010911);
+ background-repeat: no-repeat; 
+ background-position: center center;
+ height: 100vh;
+ color: white;
+ font-family: cursive;
+}
+
