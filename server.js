@@ -1,17 +1,12 @@
-/*
-Create a simple web application that uses the fs and http modules. 
-Use http to create the server and fs to read your html file. 
-Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
-*/
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
-const querystring = require("querystring");
+// const querystring = require("querystring");
 // const figlet = require("figlet");
 
 const server = http.createServer(function (req, res) {
   const page = url.parse(req.url).pathname;
-  const params = querystring.parse(url.parse(req.url).query);
+  // const params = querystring.parse(url.parse(req.url).query);
 
   console.log(page);
   if (page == "/") {
