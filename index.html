@@ -1,0 +1,23 @@
+<!-- Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coin Flip</title>
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Coin Flip</h1>
+    <h2>Heads or tails?</h2>
+			<fieldset>
+				<input type="radio" id="heads" name="heads-or-tails" value="heads">
+				<label for="heads">Heads</label>
+				<input type="radio" id="tails" name="heads-or-tails" value="tails">
+				<label for="tails">Tails</label>
+			</fieldset>
+    <p id="result"></p>
+    <button id="flip-coin" type="button" name="button">Flip coin</button>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
