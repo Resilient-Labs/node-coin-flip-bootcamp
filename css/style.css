@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #2b3aae;
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 30px;
+  color: #2b3aae;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+h3 {
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+input {
+  padding: 8px 10px;
+  margin: 20px 0;
+  border: 1px solid #3e805e;
+  border-radius: 10px;
+}
+
+#submitGuess {
+  padding: 10px;
+  background: #3e805e;
+}
+
+#submitGuess:hover {
+  background: #8eb4a0;
+}
+
+#coinFlip {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #d7915b;
+  font-size: 18px;
+}
+
+#coinFlip:hover {
+  background: #d7ae8e;
+}
+
+#coinFlip:disabled {
+  background: #d7ae8e;
+  cursor: default;
+}
+
+#restart {
+  background: #6363c5;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+#restart:hover {
+  background: #66668c;
+}
+
+
+#resultMsg {
+  font-size: 20px;
+}
+
+#errorDisplay {
+  color: #e74242;
+  font-weight: 700;
+
+}
