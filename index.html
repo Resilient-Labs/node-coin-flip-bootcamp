@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is where your description goes" />
+  <meta name="keywords" content="one, two, three" />
+  <title>Coin Flip Game</title>
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>Coin Flip Game</h1>
+  <p>Input your guess, either heads or tails, and submit your guess. Once your guess is submitted flip the coin to check
+    to see if your guess is correct or not</p>
+  <form>
+    <input type="text" required>
+    <button id="submitGuess">Submit Guess</button>
+    </section>
+    <section>
+      <button id="coinFlip">Flip Coin</button>
+    </section>
+    <section class="result-container">
+      <h3>Your Guess: <span id="userGuess"></span></h3>
+      <h3>
+        Coin is: <span id="coinResult"></span>
+      </h3>
+      <span id="resultMsg"></span>
+      <span id="errorDisplay"></span>
+    </section>
+    <button id="restart">New Game</button>
+    <script type=" text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
