@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>html</title>
+</head>
+<body>
+    <!-- <img src='' alt='coin image'> -->
+    <span></span>
+    <button type='button' id="heads">Heads</button>
+    <button type='button' id="tails">Tails</button>
+    <h1></h1>
+    <h2></h2>
+    
+    <script type="text/javascript">
+        document.querySelector('#heads').addEventListener('click', flipForHeads)
+        document.querySelector('#tails').addEventListener('click', flipForTails)
+
+        function flipForHeads() {
+            const result = document.querySelector('h1')
+            const compare = document.querySelector('h2')
+
+            fetch(`/api?guess=heads`)
+                .then(response => response.json())
+                .then((data) => {
+                console.log(data);
+                result.innerText = `It was ${data.result}`
+                compare.innerText = `You were ${data.compare}`
+                });
+        }
+
+        function flipForTails() {
+            const result = document.querySelector('h1')
+            const compare = document.querySelector('h2')
+
+            fetch(`/api?guess=tails`)
+                .then(response => response.json())
+                .then((data) => {
+                console.log(data);
+                result.innerText = `It was ${data.result}`
+                compare.innerText = `You were ${data.compare}`
+                });
+        }
+    </script>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
