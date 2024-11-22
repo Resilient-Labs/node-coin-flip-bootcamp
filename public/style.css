@@ -1,0 +1,13 @@
+body {
+    color: white;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('images/terminator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    display: inline;
+
+}
