@@ -1,0 +1,87 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.coin {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+button {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+section.coin img {
+  width: 200px;
+  height: 200px;
+  animation: spin 1s linear;
+}
+
+@keyframes spin { 
+  0% { 
+    transform: rotateY(0deg); 
+    content: url('../img/heads.png'); 
+  } 
+  10% { 
+    transform: rotateY(108deg); 
+    content: url('../img/tails.png'); 
+  } 
+  20% { 
+    transform: rotateY(216deg); 
+    content: url('../img/heads.png'); 
+  } 
+  30% { 
+    transform: rotateY(324deg); 
+    content: url('../img/tails.png'); 
+  } 
+  40% { 
+    transform: rotateY(432deg); 
+    content: url('../img/heads.png'); 
+  } 
+  50% { 
+    transform: rotateY(540deg); 
+    content: url('../img/tails.png'); 
+  } 
+  60% { 
+    transform: rotateY(648deg); 
+    content: url('../img/heads.png'); 
+  } 
+  70% { 
+    transform: rotateY(756deg); 
+    content: url('../img/tails.png'); 
+  } 
+  80% { 
+    transform: rotateY(864deg); 
+    content: url('../img/heads.png'); 
+  } 
+  90% { 
+    transform: rotateY(972deg); 
+    content: url('../img/tails.png'); 
+  } 
+  100% { 
+    transform: rotateY(1080deg); 
+  } 
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
