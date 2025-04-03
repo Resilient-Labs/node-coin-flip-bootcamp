@@ -4,20 +4,6 @@ const url = require('url');
 const querystring = require('querystring');
 const figlet = require('figlet')
 
-// Take name client side
-
-// flip for bot server side
-
-// Respond with win or lose (can be setup in the DOM)
-// let choice = Math.floor(Math.random() * 2)
-// console.log(choice)
-// document.querySelector("#personSelect").textContent = `You chose ${userName}`
-// if ((userName === 'heads' && choice === 0) || (userName === 'tails' && choice === 1)) {
-//   document.querySelector("#result").textContent = `You win`
-// } else {
-//   document.querySelector("#result").textContent = `You lose!`
-// }
-
 const server = http.createServer(function(req, res) {
   const page = url.parse(req.url).pathname;
   const params = querystring.parse(url.parse(req.url).query);
