@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align:center;
+    margin-top:15em;
+  }
+div{
+    /* outline: black 1px solid; */
+    height: 15em;
+    width:30%;
+    border:none;
+    }
+img{
+    width:250px;
+    height:250px;
+}
+    .coin {
+        height: 15em;
+        width: 100%;
+    }
