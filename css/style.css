@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: black;
+}
+
+
+h1 {
+  color: red;
+  font-size: 3em
+}
+
+h3 {
+  font-size: 3em;
+}
+
+main {
+  text-align: center;
+  background: rgb(176, 176, 176);
+  box-shadow: 0 8px 32px 0 rgba(238, 15, 15, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: max-content;
+  margin: auto;
+  height: max-content;
+}
+
+button {
+  background: rgba(255, 0, 0, 0);
+  box-shadow: 0 8px 32px 0 rgba(238, 15, 15, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
