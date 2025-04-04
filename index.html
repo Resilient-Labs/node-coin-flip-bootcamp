@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Coin Flip Game</title>
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Game container styling */
+        .coinGame {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            width: 300px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 15px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Score styling */
+        .score {
+            display: block;
+            margin: 15px 0;
+            font-size: 18px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* Result styling */
+        .result {
+            display: block;
+            margin-top: 10px;
+            font-size: 22px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 400px) {
+            .coinGame {
+                width: 80%;
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coinGame">
+        <h1>Coin Flipping Guessing Game</h1>
+        <button class="head">Heads</button>
+        <button class="tail">Tails</button>
+        <span class="score">Correct Guesses: 0</span>
+        <span class="result"></span>
+    </div>
+
+    <script>
+        const result = document.getElementsByClassName('result')[0];
+        const headBtn = document.getElementsByClassName('head')[0];
+        const tailBtn = document.getElementsByClassName('tail')[0];
+        const score = document.getElementsByClassName('score')[0];
+        let count = 0;
+
+        function getHeadsOrTails(choice) {
+            let options = ['head', 'tail'];
+            let rng = Math.floor(Math.random() * 2);
+            result.innerText = `The coin landed on ${options[rng]}.`;
+
+            if (options[rng] == 'head' && choice == 'head' || options[rng] == 'tail' && choice == 'tail') {
+                count += 1;
+                score.innerText = `Correct Guesses: ${count}`;
+            }
+        }
+
+        headBtn.addEventListener('click', () => getHeadsOrTails('head'));
+        tailBtn.addEventListener('click', () => getHeadsOrTails('tail'));
+    </script>
+</body>
+</html>
