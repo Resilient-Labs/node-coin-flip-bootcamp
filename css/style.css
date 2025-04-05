@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.coinFlip{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15em;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#coinSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
