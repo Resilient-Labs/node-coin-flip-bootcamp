@@ -1,0 +1,19 @@
+{
+  "name": "coin-flip",
+  "version": "1.0.0",
+  "description": "A coin flip app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Coin",
+    "flip"
+  ],
+  "author": "Jesulayomi <jesulayomi081@gmail.com> (https://www.jesulayomi.tech/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "figlet": "^1.8.0"
+  }
+}
