@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  background-color: rgb(157, 154, 154);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: goldenrod;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px black;
+}
+
+img{
+  margin-top: 50px;
+  width: 350px;
+  height: 350px;
+}
+
+#betSection{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+button{
+  width: 75px;
+  height: 50px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+h2{
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
