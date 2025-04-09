@@ -1,0 +1,11 @@
+body{
+  text-align: center;
+  margin-top: 15%;
+  background-image: url(background.jpg);
+  background-size: 100%;
+}
+
+img{
+  width: 125px;
+  height: 125px;
+}
