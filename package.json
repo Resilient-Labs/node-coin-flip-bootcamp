@@ -1,0 +1,19 @@
+{
+  "name": "coin-flip-bootcamp",
+  "version": "1.0.0",
+  "description": "Coin Flip Node js Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kperpignant/node-coin-flip-bootcamp.git"
+  },
+  "author": "karlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kperpignant/node-coin-flip-bootcamp/issues"
+  },
+  "homepage": "https://github.com/kperpignant/node-coin-flip-bootcamp#readme"
+}
