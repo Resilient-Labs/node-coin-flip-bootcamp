@@ -2,7 +2,7 @@
 
 
 # Description
-This website enables user to flip a coin
+This website enables user to guess if the coin flip will be heads or tails. The server will generate a result and display the game outcome on the screen.
 
 ## How It's Made:
 Tech used: 
@@ -10,9 +10,10 @@ Tech used:
 - CSS
 - JavaScript
 - Node.js
+- API
 
 ## Lessons Learned:
-- How to create forms in HTML/CSS
+- Creatomg my own API through vs code
 - Using a server to generate a response
 - Learning how to use Node.js and create servers
 
