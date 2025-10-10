@@ -21,7 +21,7 @@ To use this coin game, follow these steps:
 - Open your browser and launch link http://localhost:2000/
 
 ## Lessons Learned:
-- Creatomg my own API through vs code
+- Creating API through VS code
 - Using a server to generate a response
 - Learning how to use Node.js and create servers
 
