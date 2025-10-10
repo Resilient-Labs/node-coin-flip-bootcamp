@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "figlet": "^1.9.3",
+    "form-data": "^4.0.4",
+    "live-server": "^1.2.0"
+  }
+}
+
+
