@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,21 +22,91 @@
 /*******************************************/
 
 body {
-  background-color: tomato;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.game {
+  border: 2px solid black;
+  box-shadow: 5px 5px gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-footer {
-
+.answers {
+  display: flex;
+  gap: 20px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.coin {
+  border-radius: 50%;
+  border: 6px solid rgb(246, 238, 161);
+  box-shadow: 5px 5px rgb(218, 117, 49);
+  width: 200px;
+  height: 200px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate {
+   animation: spin 2s infinite linear forwards;
+}
+
+button {
+  flex: 1;
+  padding: 5px;
+  font-size: 1.4rem;
+  border-radius: none;
+  border: 2px solid black;
+  width: 15rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+    background: url('../assets/tail.png') no-repeat center/cover;
+  }
+
+  50% {
+    transform: rotateY(180deg);
+    background: url('../assets/head.png') no-repeat center/cover;
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    background: url('../assets/tail.png') no-repeat center/cover;
+  }
+}
+
+
+@media screen and (max-width: 760px){
+  .answers{
+    flex-direction: column;
+  }
+  .game{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 346px){
+  .game{
+    min-width: 300px;
+  }
+}

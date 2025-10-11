@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Coin flip</title>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="/styles">
-	</head>
-	<body>
-		<h1>Hello! I'm home page</h1>
-		<button>Flip a coin</button>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Coin flip game">
+	<meta name="keywords" content="coin, flip, corgi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<script type="text/javascript" src="/main"></script>
-	</body>
+	<title>Coin flip</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="/reset">
+	<link rel="stylesheet" href="/styles">
+</head>
+
+<body>
+	<main>
+		<section class = "game">
+			<h1>Heads or Tails?</h1>
+			<div class="coin animate"></div>
+			<h1>Call it</h1>
+			<div class="answers">
+				<button id="head">HEADS</button>
+				<button id="tail">TAILS</button>
+			</div>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="/main"></script>
+</body>
+
 </html>

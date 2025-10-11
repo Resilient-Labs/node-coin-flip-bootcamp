@@ -6,8 +6,6 @@ const figlet = require('figlet');
 
 const server = http.createServer((req, res) => {
     const myUrl = url.parse(req.url).pathname;
-    console.log('my URL =>' + req.url);
-
     //Routing
     if (myUrl === '/') {
         fs.readFile("index.html", (error, data) => {
@@ -24,17 +22,24 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, { 'Content-Type': 'text/css' });
             res.end(data);
         })
-    }else if (myUrl === '/main') {
+    } else if (myUrl === '/main') {
         fs.readFile('js/main.js', (error, data) => {
             res.writeHead(200, { 'Content-Type': 'text/javascript' })
             res.end(data);
         })
     } else if (myUrl === '/coinflipapi') {
-            res.writeHead(200, { 'Content-Type': 'text/text' })
-            res.end( Math.floor(Math.random()*2)? 'Head' : 'Tail');
-    }else {
+        res.writeHead(200, { 'Content-Type': 'text/text' })
+        const result = Math.floor(Math.random() * 2) ? 'head' : 'tail';
+        console.log(result);
+        res.end(result);
+    } else if (myUrl.startsWith('/assets/')) {
+        fs.readFile('.' + myUrl, (error, data) => {
+            res.writeHead(200, { 'Content-Type': 'image/png' });
+            res.end(data);
+        })
+    } else {
         figlet('404!!', function (error, data) {
-            if(error) {
+            if (error) {
                 console.log('Something went wrong...');
                 console.dir(error);
                 return;
