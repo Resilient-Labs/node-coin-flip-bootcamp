@@ -1,0 +1,242 @@
+:root {
+  --field-green: #1e4620;
+  --accent-gold: #d49b2f;
+  --football-brown: #7a4328;
+  --white: #ffffff;
+  --correct-color: #28a745;
+  --wrong-color: #dc3545;
+  --shadow: rgba(0,0,0,0.35);
+}
+
+/* ---------- Global ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--field-green);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* ---------- Header ---------- */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--accent-gold);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+h1::before {
+  content: "🏈 ";
+  font-size: 1.5rem;
+}
+
+/* ---------- Form ---------- */
+form {
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.05));
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 100%;
+  box-shadow: 0 8px 25px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+/* ---------- Radio Buttons ---------- */
+input[type="radio"][name="coin"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 50px;
+  height: 24px;
+  background: var(--football-brown);
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+input[type="radio"][name="coin"]::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+input[type="radio"][name="coin"]:checked::after {
+  transform: translateX(26px);
+  background: var(--accent-gold);
+}
+
+input[type="radio"][name="coin"]::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  border-radius: 1px;
+  opacity: 0.8;
+}
+
+input[type="radio"][name="coin"]:checked::before {
+  left: auto;
+  right: 6px;
+}
+
+/* ---------- Button ---------- */
+#clickMe {
+  background: linear-gradient(180deg, var(--football-brown), #8a4b2f);
+  border: none;
+  border-radius: 25px;
+  color: var(--white);
+  font-weight: 700;
+  padding: 12px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  box-shadow: 0 6px 15px var(--shadow);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#clickMe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px var(--shadow);
+}
+
+#clickMe:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+#clickMe::before {
+  content: "";
+  width: 30px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--white) 0 20%, transparent 20% 100%);
+  border-radius: 3px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- Result ---------- */
+#result {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px var(--shadow);
+  min-width: 280px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#result.correct {
+  background: var(--correct-color);
+  color: var(--white);
+}
+
+#result.wrong {
+  background: var(--wrong-color);
+  color: var(--white);
+}
+
+/* ---------- Responsive for Mobile (<500px) ---------- */
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 25px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  fieldset {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  input[type="radio"][name="coin"] {
+    width: 60px;
+    height: 28px;
+  }
+
+  input[type="radio"][name="coin"]::after {
+    width: 26px;
+    height: 26px;
+  }
+
+  #clickMe {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 14px;
+  }
+
+  #result {
+    font-size: 1.6rem;
+    min-width: 280px;
+    margin-top: 25px;
+  }
+}
