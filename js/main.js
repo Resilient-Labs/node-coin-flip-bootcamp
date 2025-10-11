@@ -6,6 +6,7 @@ function flipCoin(button) {
         .then(res => res.text())
         .then(data => {          
             const btn = document.querySelector(`#${button.id}`);
+            buttons.forEach(b => b.disabled = true);
             document.querySelector('.coin').style.background =`url('../assets/${data}.png') no-repeat center/cover`;
             if(button.id === data){
                 btn.style.background = 'rgba(4, 222, 4, 0.766)';
@@ -20,6 +21,7 @@ function flipCoin(button) {
                 document.querySelector('.coin').classList.toggle('animate');
                 btn.style.backgroundColor = 'white';
                 document.querySelector('h1').innerText = 'Heads or Tails?';
+                buttons.forEach(b => b.disabled = false);
             }, 2000);
         });
 }
