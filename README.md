@@ -71,7 +71,7 @@ http://localhost:8001
 
 ## Screenshots
 
-<img width="800" alt="coin-flip-screenshot" src="https://user-images.githubusercontent.com/yourusername/assets/coin-flip-screenshot.png" />
+<img width="627" height="341" alt="coin flip" src="https://github.com/user-attachments/assets/c02e0caa-491e-4a3f-b12b-922dae4fce27" />
 
 ## Acknowledgements
 * [Node.js Documentation](https://nodejs.org/en/docs/)
