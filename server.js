@@ -90,4 +90,5 @@ const server = http.createServer(function (req, res) {
     }
 });
 
-server.listen(8000, () => console.log('Server running'));
+const PORT = process.env.PORT || 8000;
+server.listen(PORT, () => console.log('Server running on :' + PORT));
