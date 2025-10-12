@@ -1,0 +1,202 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('../img/mario-sky.jpg') center bottom / cover no-repeat;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  h1 and keyframe styling from ChatGPT */
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 32px;
+    color: #ffcc00;
+    text-shadow:
+        3px 3px 0 #000,
+        -3px 3px 0 #ff0000, 
+        3px -3px 0 #00ff00;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: titlePop 1s ease-out forwards, titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titlePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes titleGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            2px 2px 0 #000,
+            4px 4px 0 #ff0000,
+            -4px -4px 0 #00ff00;
+    }
+
+    50% {
+        text-shadow:
+            2px 2px 0 #000,
+            4px 4px 0 #ffff00,
+            -4px -4px 0 #00ffff;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* searched how to make a circle on Google for coin shape */
+#mario {
+    background: radial-gradient(circle at 30% 30%, #ff032f, #c62828);
+    border: 6px solid #005cca;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+#luigi {
+    background: radial-gradient(circle at 30% 30%, #5bb33a, #2e7d32);
+    border: 6px solid #546ea1;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#mario img,
+#luigi img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+#flip {
+    font-family: 'Press Start 2P', cursive;
+    background: radial-gradient(circle at 30% 30%, #ffeb3b, #fbc02d);
+    border: 3px solid #f57f17;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    color: #222;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 0 #f57f17, inset 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 #ad663e, inset 0 0 12px rgba(255, 255, 255, 0.75);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #f57f17;
+}
+
+button.selected {
+    outline: 4px solid #ffeb3b;
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.35) inset, 0 8px 0 #f57f17;
+}
+
+#resultCoin {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #111;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#resultCoin.show {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* searched flip functionality for animation on Google */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg) scale(1);
+    }
+
+    100% {
+        transform: rotateY(720deg) scale(1);
+    }
+}
+
+.spin {
+    animation: flip 0.7s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        gap: 14px;
+    }
+}
+
+#resultCoin.mario {
+    color: white;
+    border: 6px solid #005cca;
+    background:
+        url('../img/mario.webp') center/contain no-repeat,
+        radial-gradient(circle at 30% 30%, #ff032f, #c62828);
+
+}
+
+#resultCoin.luigi {
+    color: white;
+    border: 6px solid #546ea1;
+    box-shadow: 0 6px 0 #546ea1, inset 0 0 10px rgba(255, 255, 255, .7);
+    background:
+        url('../img/luigi.webp') center/contain no-repeat,
+        radial-gradient(circle at 30% 30%, #5bb33a 0%, #2e7d32 85%);
+
+}
