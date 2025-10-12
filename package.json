@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JustinJoshi/node-coin-flip-bootcamp#readme",
   "dependencies": {
+    "figlet": "^1.9.3",
     "node": "^24.10.0"
   }
 }
