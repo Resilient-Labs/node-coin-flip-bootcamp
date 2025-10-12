@@ -4,6 +4,7 @@ A nostalgic, game-inspired coin-flip built with a **Super Mario Bros.** twist.
 Choose your favorite bro, hit **Flip**, and watch the coin spin to reveal who wins — complete with character-themed coins, glowing animations, and power-up sound effects.
 
 [Link to project](https://node-coin-flip-production.up.railway.app/)  
+
 ![screenshot](img/mario-coin.png "Flip Bros. — Mario vs Luigi Coin Flip")
 
 ---
