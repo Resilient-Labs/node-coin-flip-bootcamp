@@ -4,7 +4,7 @@ Create a simple web application that uses the fs and http modules. Use http to c
 ### Tech Stack:
 HTML - For the structure.
 CSS - For styling.
-JavaScript - For API requests and displaying data.
+JavaScript -
 node server.
 ### How to View:
 Download or clone this repo.
