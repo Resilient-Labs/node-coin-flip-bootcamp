@@ -1,0 +1,24 @@
+{
+  "name": "coin-flip",
+  "version": "1.0.0",
+  "description": "Coin flip api",
+  "homepage": "https://github.com/L-Meryem/coin-flip#readme",
+  "bugs": {
+    "url": "https://github.com/L-Meryem/coin-flip/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L-Meryem/coin-flip.git"
+  },
+  "license": "ISC",
+  "author": "LMeryem",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "figlet": "^1.9.3"
+  }
+}
