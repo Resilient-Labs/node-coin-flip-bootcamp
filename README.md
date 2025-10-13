@@ -1,22 +1,27 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Coin Flip Game
+![alt text](image.png)
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+# Description
+This website enables user to guess if the coin flip will be heads or tails. The server will generate a result and display the game outcome on the screen.
 
-### How to submit your code for review:
+## How It's Made:
+Tech used: 
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- API
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How to Use:
+To use this coin game, follow these steps:
+- Clone the repository: git clone https://github.com/WinnieYuDev/node-coin-flip.git
+- Navigate to the app directory in terminal: cd app 
+- Install module dependencies in terminal: npm install
+- Run the server by pasting this into the terminal: node server.js
+- Open your browser and launch link http://localhost:2000/
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+- Creating API through VS code
+- Using a server to generate a response
+- Learning how to use Node.js and create servers
+
