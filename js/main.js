@@ -1,14 +1,15 @@
 document.querySelector("button").onclick = flipCoin;
 
-function flipCoin() {
+function flipCoin(e) {
+  e.preventDefault();
+  const guess = document.querySelector("input[name='coin']:checked").value;
+
   // call api to flip coin - heads or tails
-  fetch("/api/flip")
+  fetch(`/api?guess=${guess}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-
       // render result of flip
-      document.querySelector("p").innerText = data.result;
+      document.querySelector("h3").innerText = data.result;
     })
     .catch((err) => console.error(err));
 }

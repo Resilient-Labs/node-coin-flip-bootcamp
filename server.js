@@ -6,10 +6,8 @@ const PORT = 8000;
 
 const server = http.createServer((req, res) => {
   const parsedURL = url.parse(req.url);
-
-  const path = parsedURL.pathname;
   const params = querystring.parse(parsedURL.query);
-  console.log(path);
+  const path = parsedURL.pathname;
 
   if (path === "/") {
     fs.readFile("index.html", (err, data) => {
@@ -17,15 +15,24 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  } else if (path === "/api/flip") {
-    console.log("\n\nYou hit an endpoint\n");
-    const coin = ["heads", "tails"];
+  } else if (path === "/api") {
+    if ("guess" in params) {
+      const coins = ["heads", "tails"];
+      const coinFlip = coins[Math.round(Math.random())];
 
-    const result = coin[Math.round(Math.random())];
-
-    console.log("RESULT", result);
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({ result }));
+      res.writeHead(200, { "Content-Type": "application/json" });
+      if (params.guess === coinFlip) {
+        res.end(
+          JSON.stringify({
+            result: `Correct! ${params.guess.toUpperCase()} Wins!`,
+          })
+        );
+      } else {
+        res.end(
+          JSON.stringify({ result: `Sorry! It was ${coinFlip.toUpperCase()}.` })
+        );
+      }
+    }
   } else if (path == "/css/style.css") {
     fs.readFile("css/style.css", (err, data) => {
       res.write(data);
