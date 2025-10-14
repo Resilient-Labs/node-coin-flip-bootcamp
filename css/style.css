@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://scienceworld.scholastic.com/content/dam/classroom-magazines/scienceworld/issues/2023-24/050624/heads-or-tails/SW-050624-HeadsOrTails-Popup1.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+h1,
+h2 {
+
+  background-color: #9aed98;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button {
+
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
