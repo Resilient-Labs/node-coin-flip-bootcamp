@@ -12,9 +12,9 @@ fetch (`/api?userGuess=${userGuess}`)
     console.log(data)
     document.querySelector('#result').innerText=data.gameLogic
     if (data.userWins){
-      document.querySelector('#message').innerText='Congrats! You win nothing 🥳'
+      document.querySelector('#message').innerText='Congrats! You win 🥳'
     }else{
-      document.querySelector('#message').innerText='LOSERRRRR 💩'
+      document.querySelector('#message').innerText='Oooh better luck next time 😢'
     }
   })
   }

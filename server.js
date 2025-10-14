@@ -38,6 +38,11 @@ const server = http.createServer(function(req, res) {
           }
         res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(JSON.stringify(objToJson));
+  }else if (page == '/styles.css'){
+    fs.readFile('styles.css', function(err, data) {
+      res.write(data);
+      res.end();
+    });
   }else if (page == '/js/client.js'){
     fs.readFile('js/client.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
@@ -59,3 +64,5 @@ const server = http.createServer(function(req, res) {
 
 server.listen(8000);
 console.log('server is running ✅');
+
+// work completed with help of developer friend
