@@ -1,0 +1,42 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+    text-align: center;
+    font-family: 'Lacquer', 'Courier New', Courier, monospace;
+    color: white;
+}
+#reset{
+    margin: 10px;
+}
+body{
+    background: rgb(67, 40, 93);
+    background-image: url(/week-9/node-coin-flip-bootcamp/img/images.png)
+}
+
+img{
+    border: white solid 5px;
+}
+h1, h2, div{
+    background:rgb(67, 40, 93) ;
+    margin-left: 600px;
+    margin-right: 600px;
+}

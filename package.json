@@ -1,0 +1,24 @@
+{
+  "name": "coin-flip-bootcamp",
+  "version": "1.0.0",
+  "description": "Coin Flip Game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaimaBogran/node-coin-flip-bootcamp.git"
+  },
+  "author": "Naima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaimaBogran/node-coin-flip-bootcamp/issues"
+  },
+  "homepage": "https://github.com/NaimaBogran/node-coin-flip-bootcamp#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "figlet": "^1.9.3"
+  }
+}
