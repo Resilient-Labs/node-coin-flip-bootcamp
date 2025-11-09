@@ -11,4 +11,4 @@ I used html for the markup, css for the styling, and I used Javascript for getti
 
 ## Image of Project:
 
-![coinflip image] (coinflipimg.jpg)
+![coinflip image](coinflipimg.jpg)
