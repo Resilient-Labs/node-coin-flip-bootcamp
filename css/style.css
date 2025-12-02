@@ -1,0 +1,195 @@
+:root {
+  --mortuum:#4F3130;
+  --wine:#753742;
+  --redwood:#AA5042;
+  --pale:#D8BD8A;
+  --flax:#D8D78F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Got this coin flip animation from Mary Selig: https://codepen.io/seligmar/pen/RwPNQOd */
+
+#coin {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition:transform 1s ease-in;
+  transform-style:preserve-3d;
+}
+
+#coin div {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+  border-radius: 50%;
+  position:absolute;
+  backface-visibility: hidden;
+}
+
+.side-a {
+  background-color: #bb0000;
+  z-index: 100;
+}
+
+.side-b {
+  background-color: #3e3e3e;
+  transform: rotateY(-180deg);
+}
+
+#coin.once {
+    animation: flipOnce 3s ease-out forwards;
+}
+
+#coin.twice {
+    animation: flipTwice 3s ease-out forwards;
+}
+
+@keyframes flipOnce {
+    from {
+        transform:rotateY(0);
+    }
+    to {
+        transform:rotateY(1800deg);
+    }
+}
+
+@keyframes flipTwice {
+    from {
+        transform:rotateY(0);
+    }
+    to {
+        transform:rotateY(1980deg);
+    }
+}
+
+body {
+  background-color: var(--redwood);
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  height:10%;
+  width:50%;
+  background-color: var(--wine);
+  border:3px solid var(--pale);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  /* border-left:3px solid var(--pale);
+  border-right: 3px solid var(--pale); */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height:40%;
+  width:50%;
+  border:3px solid var(--wine);
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  padding:1% 2%;
+  background-color: var(--mortuum);
+
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Limelight',cursive;
+  font-size: 1.5rem;
+  color:var(--pale);
+}
+
+h1 {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 3rem;
+  color:var(--flax);
+}
+
+.buttons {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  width:200px;
+  height:50px;
+  background: var(--pale);
+  transform: scale(100%);
+}
+
+button:hover {
+  scale: 110%;
+}
+
+.coinR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Limelight',cursive;
+  font-size: 1.5rem;
+  color:var(--flax)
+}
