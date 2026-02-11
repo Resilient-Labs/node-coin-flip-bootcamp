@@ -1,0 +1,15 @@
+{
+  "name": "coin-flip-game",
+  "version": "1.0.0",
+  "description": "Two-player coin flip game built with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "figlet": "^1.9.3"
+  },
+  "engines": {
+    "node": ">=17.0.0"
+  }
+}
