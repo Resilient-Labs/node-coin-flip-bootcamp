@@ -1,0 +1,109 @@
+/* Loud. Flashy. Gold. Purple. Vegas. */
+/* styled with the help of chatgpt */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at center, #2b004d 0%, #0b0014 100%);
+  color: #ffd700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* heading – like a neon casino sign */
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffd700;
+  text-shadow: 
+    0 0 10px #ffd700,
+    0 0 20px #ff4da6,
+    0 0 30px #ffd700;
+  margin-bottom: 10px;
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 
+      0 0 10px #ffd700,
+      0 0 20px #ff4da6,
+      0 0 30px #ffd700;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+/* subheading */
+h2 {
+  color: #e6ccff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* radio button area */
+label {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s;
+}
+
+label:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+input[type="radio"] {
+  margin-left: 8px;
+  transform: scale(1.2);
+}
+
+button {
+  background: linear-gradient(45deg, #ffd700, #b8860b);
+  color: #4b004e;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #ffd700, 0 0 30px #ff00cc;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ffda73, #ff00cc);
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #ffd700, 0 0 45px #ff00cc;
+}
+
+/* result display */
+#result, #message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ff00cc;
+}
+
+/* give the whole page that casino sheen */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255,215,0,0.1), transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(255,0,204,0.1), transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
