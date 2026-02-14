@@ -1,0 +1,29 @@
+body{
+    background: rgb(25, 25, 25);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 10%;
+}
+h3{
+    color: yellow;
+}
+#box{
+    border: 3px solid yellow;
+    padding: 5%;
+}
+#output{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+button{
+    width: 150px;
+    background-color: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:active{
+   background-color: rgb(238, 238, 121); 
+}
