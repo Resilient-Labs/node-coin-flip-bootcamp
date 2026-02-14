@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+.coin{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.coin .head, .coin .tail {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 300ms ease;
+}
+
+.coin .head {
+  background-image: url(../img/DogeHead.png);
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.coin .tail {
+  background-image: url(../img/DogeTail.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+#flip-btn {
+  margin: 2%;
+  width: 100px;
+  height: 35px;
+  font-size: 1.11rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background: hsl(42deg 100% 60%);
+  transition: all 300ms ease;
+}
+
+#flip-btn:active{
+  transform: scale(.8);
+}
