@@ -1,0 +1,105 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: #111827;
+  color: white;
+
+  font-family: monospace;
+  text-align: center;
+
+  padding: 3rem 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: #facc15;
+
+  text-shadow: 4px 4px 0 #ef4444;
+
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.coin-options {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+  margin-bottom: 3rem;
+}
+
+.coin {
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  border: 8px solid #facc15;
+
+  box-shadow:
+    inset 0 0 0 6px #92400e,
+    8px 8px 0 #000;
+}
+
+#heads {
+  background: #f59e0b;
+}
+
+#tails {
+  background: #9ca3af;
+}
+
+.coin:hover {
+  transform: translateY(-5px);
+}
+
+.coin:active {
+  transform: translateY(2px);
+}
+
+h2 {
+  width: fit-content;
+  margin: 0 auto;
+
+  padding: 1rem 2rem;
+
+  border: 4px solid white;
+
+  color: #facc15;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
