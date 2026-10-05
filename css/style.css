@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    
+    text-shadow:2px 2px 6px rgb(224, 116, 216);
+}
+h1, p,h2{
+    text-align: center;
+    color:rgb(241, 238, 241);
+}
+p{
+    font-size: 1.5rem;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(150, 198, 233);
+}
+button{
+    width:100px;
+    background-color: rgb(177, 229, 238);
+    padding:10px;
+    border-radius:20px;
+    gap:10px;
+    border-color: black;
+} 
+button:hover{
+color:rgb(38, 9, 230)
+}
+
+#containerGuessBtns{
+    display:flex;
+    gap:2rem;
+    margin-bottom:2rem;
+    justify-content: center;
+}
+
+#containerFlipBtn{
+margin-bottom: 2rem;
+display:flex;
+justify-content: center;
+}
+.coin span{
+    color:goldenrod;
+}
+.coin{
+    width:200px;
+    height:200px;
+    background-color: rgb(150, 113, 185);
+    border:2px solid;
+    align-self: center;
+border-radius: 50%;
+display:flex;
+align-items:center;
+justify-content: center;
+}
+.coin span{
+    font-size:3rem;
+    font-weight:1.5rem;
+}
+@keyframes flip {
+    from{
+transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(720deg);
+    }
+}
+
+.flipping{
+    animation-name: flip;
+    animation-duration:1s;
+}

@@ -1,22 +1,29 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+#  Predict and Flip
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+A simple coin flip prediction game
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+# How it Works
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+1. Choose either Heads or Tails to predict the outcome of the coin flip.
+2. Click the Flip Coin button.
+3. The server randomly generates the result of the coin flip.
+4. The game displays the result of the coin flip and weather or not the prediction was correct.
+
+## What I Practiced 
+
+- Creating server routes
+- Working with Asynchronous JavaScript
+- CSS animations
+- Dom Manipulation
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Node HTTP module
+
+## Author
+Myjah Snape
