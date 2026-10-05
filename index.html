@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Flip Game</title>
+  <!-- css kept in here since the server only serves this one file -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      text-align: center;
+      margin: 0;
+      padding: 40px 16px;
+    }
+
+    main {
+      max-width: 420px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+      margin: 6px;
+      border: 2px solid #333;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    /* so you can tell which guess is picked */
+    .choice.selected {
+      background: #333;
+      color: #fff;
+    }
+
+    #flipBtn,
+    #playAgainBtn {
+      background: #2b6cb0;
+      border-color: #2b6cb0;
+      color: #fff;
+    }
+
+    .win {
+      color: #2f855a;
+    }
+
+    .lose {
+      color: #c53030;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Coin Flip Game</h1>
+
+    <section id="pickSection">
+      <p>Pick your guess:</p>
+      <button class="choice" data-choice="Heads">Heads</button>
+      <button class="choice" data-choice="Tails">Tails</button>
+      <p id="pickedText">No guess picked yet.</p>
+      <button id="flipBtn" disabled>Flip the Coin</button>
+    </section>
+
+    <section id="resultSection" class="hidden">
+      <p>Your guess: <strong id="guessText"></strong></p>
+      <p>The coin landed on: <strong id="coinText"></strong></p>
+      <h2 id="outcomeText"></h2>
+      <button id="playAgainBtn">Play Again</button>
+    </section>
+
+    <p>Wins: <span id="wins">0</span> / Rounds: <span id="rounds">0</span></p>
+  </main>
+
+  <script>
+    const choiceBtns = document.querySelectorAll('.choice');
+    const flipBtn = document.querySelector('#flipBtn');
+    const playAgainBtn = document.querySelector('#playAgainBtn');
+    const pickSection = document.querySelector('#pickSection');
+    const resultSection = document.querySelector('#resultSection');
+    const pickedText = document.querySelector('#pickedText');
+    const guessText = document.querySelector('#guessText');
+    const coinText = document.querySelector('#coinText');
+    const outcomeText = document.querySelector('#outcomeText');
+    const winsText = document.querySelector('#wins');
+    const roundsText = document.querySelector('#rounds');
+
+    let guess = null;
+    let wins = 0;
+    let rounds = 0;
+
+    // under 0.5 = heads, otherwise tails - 50/50 either way
+    const flipCoin = () => (Math.random() < 0.5 ? 'Heads' : 'Tails');
+
+    choiceBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        guess = btn.dataset.choice;
+        // clear the old highlight first so only one guess looks picked
+        choiceBtns.forEach((b) => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        pickedText.textContent = `You picked ${guess}.`;
+        flipBtn.disabled = false;
+      });
+    });
+
+    flipBtn.addEventListener('click', () => {
+      // button starts disabled, but just in case
+      if (!guess) return;
+
+      const result = flipCoin();
+      const won = guess === result;
+
+      rounds++;
+      if (won) wins++;
+
+      guessText.textContent = guess;
+      coinText.textContent = result;
+      outcomeText.textContent = won ? 'You guessed right! You win!' : 'Wrong guess. You lose!';
+      outcomeText.className = won ? 'win' : 'lose';
+      winsText.textContent = wins;
+      roundsText.textContent = rounds;
+
+      // swap to the results so they can't flip again without restarting the round
+      pickSection.classList.add('hidden');
+      resultSection.classList.remove('hidden');
+    });
+
+    playAgainBtn.addEventListener('click', () => {
+      // reset the round but keep the score going
+      guess = null;
+      choiceBtns.forEach((b) => b.classList.remove('selected'));
+      pickedText.textContent = 'No guess picked yet.';
+      flipBtn.disabled = true;
+
+      resultSection.classList.add('hidden');
+      pickSection.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
