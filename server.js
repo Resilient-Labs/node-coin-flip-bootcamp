@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs')
 const url = require('url');
 const querystring = require('querystring');
-const figlet = require('./node-coin-flip-game/node_modules/figlet/dist/types/cjs/figlet.d.cts')
+/*const figlet = require('./node-coin-flip-game/node_modules/figlet/dist/types/cjs/figlet.d.cts')*/
 
 const server = http.createServer(function(req, res) {
   const page = url.parse(req.url).pathname;
@@ -48,7 +48,7 @@ const server = http.createServer(function(req, res) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.end(data);
     });
-  } else {
+  } /*else {
     figlet('404!!', (err, data) => {
       if (err) {
         console.log('Something went wrong...');
@@ -61,7 +61,7 @@ const server = http.createServer(function(req, res) {
       res.writeHead(404, {'Content-Type': 'text/plain'});
       res.end(data);
     });
-  }
+  }*/
 });
 
 server.listen(8000);
