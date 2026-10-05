@@ -1,0 +1,47 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after{
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 2rem;
+}
+#coin {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(149, 146, 132);
+    border-radius: 50%;
+    margin: 20px auto;
+    font-size: 1.4rem;
+}
+#flipButton {
+    display: block;
+    margin: 20px auto;
+}
+#result {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
