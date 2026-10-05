@@ -1,22 +1,48 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+A simple coin flip guessing game built with HTML, CSS, JavaScript, and Node.js.
 
-### How to submit your code for review:
+## Project Preview 
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img width="680" height="445" alt="coin flip" src="https://github.com/user-attachments/assets/4e8151a6-8a5d-42d5-b9a7-660a0f8437dd" />
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How to Play
+
+1. Enter `heads` or `tails`.
+2. Click the **Click!** button.
+3. See the coin flip result and whether you won or lost.
+
+## Features
+
+- Random heads or tails outcomes
+- Win or lose messages
+- Solid red styling with gold accents
+- Responsive layout for screens at 600px and below
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Node.js http and fs modules
+
+## Run Locally
+
+Install the dependencies:
+
+    npm install
+
+Start the server:
+
+    node server.js
+
+Open http://localhost:8000 in your browser.
+
+## What I Learned
+
+I practiced sending requests from the browser to a Node.js server,
+returning JSON responses, and updating the page with the results.
+
+I also fixed a bug where the tails condition checked the wrong
+query parameter, preventing the server from responding.
