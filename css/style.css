@@ -1,0 +1,35 @@
+body {
+    background-color: lightblue ;
+
+}
+
+
+.square-container {
+    width: 300px;
+    aspect-ratio: 1/1;
+    overflow: auto;
+    border: 1px solid ;
+    padding: 15px;
+} 
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    place-items:center;
+
+}
+h3 {
+    margin-bottom: -10px;
+    
+}
+
+button{
+    place-items: center
+    ;
+
+
+}
