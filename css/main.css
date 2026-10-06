@@ -1,0 +1,38 @@
+body{
+    font-size: 62.5%;
+    padding: 5% 15%;
+    background: #272727;
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+}
+section{
+    border: 1px solid #000;
+    border-radius: 15px;
+    background: #2da0af7a;
+    backdrop-filter: blur(10px);
+    min-height: 30rem;
+    padding: 5rem 10rem;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+span{
+    font-size: .8rem;
+}
+h2{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+button{
+    font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+    font-size: 1.4rem;
+    background: #272727;
+    color: #1d6b75;
+    border: 1px;
+    margin-right: 10px;
+    width: 5rem;
+    border-radius: 5px;
+}
