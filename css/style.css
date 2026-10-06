@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 0;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #2e2e2e;
+  margin-bottom: 30px;
+}
+
+
+input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #2e2e2e;
+}
+
+button{
+  padding: 10px 20px;
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#yourChoice {
+  margin-top: 40px;
+}
+
+#flipResult{
+  font-size: 24px;
+}
+
+#winOrLose {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#coin {
+  font-size: 80px;
+  margin: 30px;
+  
+}
+
+.flip {
+  animation: flip 1s ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(1080deg);
+  }
+}
