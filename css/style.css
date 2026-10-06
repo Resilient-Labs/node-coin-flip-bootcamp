@@ -1,0 +1,25 @@
+body {
+    background: orange;
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 5px;
+    background: greenyellow;
+    border: none;
+    border-radius: 5px;
+}
