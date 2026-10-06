@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+/* .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+} */
+
+/* .clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+min-height: 100vh;
+margin: 0;
+padding: 30px;
+background: radial-gradient(circle at top, #5a2433 0%, #29111b 45%, #12090d 100%);
+color: #f8eee7;
+font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* GAME */
+
+.game {
+  width: 90%;
+  max-width: 650px;
+  padding: 50px 40px;
+  text-align: center;
+  background: rgba(24, 12, 17, 0.88);
+  border: 2px solid #d6a84b;
+  /* border-radius: 20px; */
+  border-radius: 315px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #d6a84b;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin: 10px 0 30px;
+  color: #d6a84b;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 65%;
+  padding: 10px 15px;
+  border: 2px solid #d6a84b;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 6px;
+  background: #d6a84b;
+  color: #1b0d13;
+  border: 2px solid #d6a84b;
+  border-radius: 6px;
+  font: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f1cf7b;;
+}
+
+.results {
+  min-height: 120px;
+  margin-top: 30px;
+}
+
+.results h2 {
+  font-size: 1rem;
+}
+
+#message {
+  color: #e9c66e;;
+  font-style: italic;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
