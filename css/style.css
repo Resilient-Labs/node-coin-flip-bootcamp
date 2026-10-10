@@ -1,0 +1,43 @@
+* { 
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0; 
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: bisque;
+    color: olive;
+
+}
+
+h1 { 
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.coin { 
+    width: 220px;
+    height: 220px;
+    font-size: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+
+button { 
+    padding: 15px 30px;
+    border: solid 2px rgb(238, 199, 100); 
+    border-radius: 10px;
+    background: rgb(255, 212, 95);
+    color: olive; 
+}
