@@ -1,0 +1,25 @@
+body {
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center; /* Centers content horizontally */
+  align-items:center;     /* Centers content vertically */
+  background: url('/images/HeadsorTailsCoin.jpg') center / cover no-repeat;
+
+}
+.container{
+    font-family: "Comic Sans MS", sans-serif;
+    place-items:center;
+    border:3px solid rgb(144, 181, 64);
+    border-radius:10px;
+    width:500px;
+    height:auto;
+    background: rgb(175, 171, 96);
+    text-align:center;
+}
+button{
+    width:80px;
+    height:23px;
+    color:rgb(22, 73, 22);
+    background: pink;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "coin-flip-bootcamp",
+  "version": "1.0.0",
+  "description": "- Fork and clone this repo - Create a new branch called answer - Checkout answer branch - Push to your fork - Issue a pull request - Your pull request description should contain the following:   - (1 to 5 no 3) I completed the challenge   - (1 to 5 no 3) I feel good about my code   - Anything specific on which you want feedback!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyalrjbk/node-coin-flip-bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/soyalrjbk/node-coin-flip-bootcamp/issues"
+  },
+  "homepage": "https://github.com/soyalrjbk/node-coin-flip-bootcamp#readme",
+  "dependencies": {
+    "figlet": "^1.12.0"
+  }
+}
