@@ -3,8 +3,10 @@
 A simple coin flip guessing game built with a Node.js server. 
 Users pick heads or tails, flip the coin, and see whether their guess matches the result.
 
+- Check it out:
+https://node-coin-flip-1.onrender.com/
+
 - Screenshots:
-- This is how it looks like:
 ![Coin Flip](./img/cover.jpeg)
 ![You Win](./img/heads.jpeg)
 ![You Lose](./img/tails.jpeg)
