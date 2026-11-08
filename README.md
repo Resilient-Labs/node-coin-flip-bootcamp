@@ -37,4 +37,3 @@ http://localhost:8000
 Choose either heads or tails.
 Flip the coin.
 See whether your guess was correct!
-Project Submission
