@@ -1,22 +1,52 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 🪙 Node.js Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+### JavaScript & Node.js Bootcamp Assignment
 
-### How to submit your code for review:
+## About the Project
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+This assignment focuses on building a simple coin-flip guessing game using JavaScript and Node.js.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+The goal is to let users guess heads or tails, generate a random coin-flip result, and tell them whether their guess was correct.
+
+It's an opportunity to practice using JavaScript on both the front end and the back end.
+
+## Project Goals
+
+- Create a basic web server using Node.js.
+- Use the built-in `http` module to handle requests.
+- Use the `fs` module to serve an HTML page.
+- Build a simple interface using HTML and JavaScript.
+- Generate a random result representing heads or tails.
+- Compare the user's guess with the result.
+- Display whether the user guessed correctly.
+
+## Planned Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Node.js
+- Node.js `http` and `fs` modules
+
+## Concepts to Practice
+
+- Creating a server without Express.
+- Serving HTML files with Node.js.
+- Using event listeners for user interactions.
+- Generating random results with JavaScript.
+- Using conditional statements to compare values.
+- Connecting client-side and server-side logic.
+
+## Project Status
+
+**Assignment instructions available — implementation not yet uploaded.**
+
+The current GitHub repository contains the assignment README but no application files.
+
+## Next Steps
+
+1. Create the Node.js server.
+2. Build the coin-flip interface.
+3. Implement the guessing logic.
+4. Display the result to the user.
+5. Test the application and upload the completed code.
