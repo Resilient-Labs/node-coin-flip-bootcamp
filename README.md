@@ -1,6 +1,7 @@
 # 🪙 Node.js Coin Flip Game
 
-### JavaScript & Node.js Bootcamp Assignment
+<img width="512" height="476" alt="Coin Flip SS" src="https://github.com/user-attachments/assets/106181a5-4220-4732-a997-f7def1332d31" />
+
 
 ## About the Project
 
@@ -37,11 +38,7 @@ It's an opportunity to practice using JavaScript on both the front end and the b
 - Using conditional statements to compare values.
 - Connecting client-side and server-side logic.
 
-## Project Status
 
-**Assignment instructions available — implementation not yet uploaded.**
-
-The current GitHub repository contains the assignment README but no application files.
 
 ## Next Steps
 
