@@ -1,0 +1,22 @@
+{
+  "name": "coin-flip-game",
+  "version": "1.0.0",
+  "description": "A simple coin flip guessing game served by a Node.js server built with the `http` and `fs` modules.\r Pick heads or tails, flip the coin, and see if you guessed right.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exbrto/Coin-Flip-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/exbrto/Coin-Flip-Game/issues"
+  },
+  "homepage": "https://github.com/exbrto/Coin-Flip-Game#readme"
+}
