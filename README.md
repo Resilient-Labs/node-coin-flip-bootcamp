@@ -5,6 +5,8 @@ Pick heads or tails, flip the coin, and see if you guessed right.
 
 ![screenshot](./img/coinFlipimg.png)
 
+[Try it here](https://coin-flip-game-y3yq.onrender.com)
+
 ## Features
 - Guess heads or tails
 - Random coin flip result on every play
