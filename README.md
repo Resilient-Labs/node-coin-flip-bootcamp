@@ -7,6 +7,12 @@ A coin flip built with Node.js hat uses the fs and http modules. Run it and get 
 
 This project is a small Node.js application that flips a coin. It uses JavaScript's built-in `Math.floor(Math.random()` to pick between two outcomes. The user must type either `heads` or `tails` and then click the 'Flip Coin' button to get their result. The outcome of their result will be render on the page depending on their coin choice. 
 
+### Live Link
+
+Use the link in the About section of this repo or [**click here**](https://node-coin-flip-zll5.onrender.com/) to run the app.
+
+![screenshot of web application](/img/Screenshot%202026-10-05%20at%206.50.43 PM.png)
+
 ### Features:
 
 - **Coin flip** — randomly returns heads or tails. Prints results.
